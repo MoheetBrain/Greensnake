@@ -1,0 +1,60 @@
+{
+  "project": "greensnake",
+  "schema_version": "v1",
+  "last_updated": "2026-09-16",
+  "phases": {
+    "1_inspect_repo": "DONE",
+    "2_schema_and_provenance": "DONE",
+    "3_people_universe": "DONE",
+    "4_score_and_classify_people": "DONE",
+    "5_launch_workstreams": "DONE",
+    "6_build_edges": "DONE",
+    "7_verify_and_reject": "DONE",
+    "8_canonicalise_companies": "DONE",
+    "9_valuations": "PARTIAL \u2014 145 of 2188 companies valued; see docs/COVERAGE_GAPS.md \u00a74",
+    "10_valuation_buckets": "DONE",
+    "11_person_company_graph": "DONE",
+    "12_person_person_graph": "DONE",
+    "13_overlap_scoring": "DONE",
+    "14_tier_rankings": "DONE \u2014 limited by valuation coverage, quantified in DATA_QUALITY.md",
+    "15_backtest_and_negative_controls": "DONE",
+    "16_validation": "DONE",
+    "17_reports_and_exports": "DONE",
+    "18_update_documentation": "DONE"
+  },
+  "people_universe_count": 190,
+  "workstreams": {
+    "agent_1": "COMPLETE",
+    "agent_2": "COMPLETE",
+    "agent_3": "COMPLETE",
+    "agent_4": "COMPLETE",
+    "agent_5": "COMPLETE",
+    "agent_6": "COMPLETE",
+    "agent_7": "COMPLETE",
+    "orchestrator": "COMPLETE \u2014 dedup audit, liveness sweep, edge audit, adjudication of workstream findings"
+  },
+  "notes": "Research workstreams write into research/batches/agent_N/. Nothing enters the database until scripts/validate_batch.py passes.",
+  "snapshot": {
+    "edges": 3239,
+    "confirmed_edges": 3205,
+    "companies": 2188,
+    "sources": 4694,
+    "distinct_source_urls": 535,
+    "valuations": 150,
+    "companies_valued": 145,
+    "people": 190,
+    "people_with_confirmed_edges": 178,
+    "rejected": 67,
+    "queued": 105,
+    "correlations": 298
+  },
+  "next_tasks": [
+    "Valuation coverage is the binding constraint: 2,043 companies remain TIER_U. SECONDARY_QUESTIONS.md Q10 ranks the highest-overlap ones.",
+    "Collect edges for the FAILURE/MEDIOCRE backtest arm deliberately -- collection follows people, and people's portfolios are documented through their wins, so the negative arm is structurally under-collected.",
+    "Source the 51 backtest cohort outcome labels (47 now have valuation evidence; the labels themselves remain PENDING_VERIFICATION).",
+    "Re-source the 24 confirmed edges whose only citation no longer resolves (OPEN_WORK.md).",
+    "Work the 105 research-queue items; the HIGH ones name a specific next source each.",
+    "Accept or reject the 18 classification revisions in docs/PEOPLE_CLASSIFICATION.md.",
+    "Target the Partovi 1998-2016 angel book for acquisition prices and shutdown dates -- realised multiples are worth more to the backtest than another 2026 paper mark."
+  ]
+}

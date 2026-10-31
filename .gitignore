@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+# The built database is a derived artefact -- regenerate with scripts/build_graph.py.
+# The raw evidence in research/batches/ is the durable asset and IS committed.
+data/processed/*.tmp

@@ -1,0 +1,803 @@
+# =============================================================================
+# GREENSNAKE PEOPLE CANDIDATE UNIVERSE
+# =============================================================================
+# WHAT THIS FILE IS
+#   The *design* layer of the graph: who we track and why. Selection favours
+#   INFORMATION ACCESS and TECHNICAL INTELLIGENCE over wealth. A Hassabis-type
+#   node is worth more here than a billionaire with no frontier-technology edge.
+#
+# WHAT THIS FILE IS NOT
+#   It contains NO investment claims. Not one. `affiliation` records a widely
+#   documented public role as of the compile date; everything about who invested
+#   in what lives in person_company_edges, each row carrying its own sources.
+#
+# SCORES: ordinal 0-5 bands, ANALYTICAL INTERPRETATION by the orchestrator, with
+#   anchors in docs/METHODOLOGY.md. They are deliberately coarse -- public
+#   evidence does not justify decimals. They NEVER alter raw overlap counts.
+#   access      = likelihood of seeing frontier companies before ordinary investors
+#   technical   = capacity to independently understand frontier science/engineering
+#   early_stage = documented record of backing eventual majors unusually early
+#   network     = depth of connection into elite founder networks
+#   capital     = freedom to make unusual, illiquid, high-risk private bets
+#   independence= how orthogonal their information source is to the rest of the pool
+#   `early_stage: null` means "no public investing record to judge" -- not zero.
+#
+# signal_class is a PRIOR. It is revised in docs/PEOPLE_CLASSIFICATION.md after
+#   the graph is built, using derived investment_visibility and herding_risk.
+# =============================================================================
+compiled: "2026-09-16"
+method_version: "people-universe-v1"
+
+people:
+
+# --- WORKSTREAM 1: AI / SOFTWARE / SEMICONDUCTORS ---------------------------
+- {key: demis_hassabis, name: Demis Hassabis, affiliation: "Co-founder & CEO, Google DeepMind", country: GB, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE, BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 2, network: 5, capital: 4, independence: 4},
+   rationale: "Nobel laureate in chemistry for AlphaFold; runs the lab that defines the AI frontier. Archetypal information node whose technical judgement is independent of venture consensus."}
+- {key: shane_legg, name: Shane Legg, affiliation: "Co-founder & Chief AGI Scientist, Google DeepMind", country: GB, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 3, independence: 4},
+   rationale: "Co-founded DeepMind and has held an explicit AGI-timeline thesis for two decades; deep technical signal even with little public investing record."}
+- {key: mustafa_suleyman, name: Mustafa Suleyman, affiliation: "CEO, Microsoft AI; co-founder of DeepMind and Inflection AI", country: GB, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, CORPORATE_EXECUTIVE], domains: [AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 3, network: 5, capital: 4, independence: 3},
+   rationale: "Twice co-founded frontier AI labs and now runs a hyperscaler's AI division; sits at the junction of research, product and hyperscaler capital."}
+- {key: sam_altman, name: Sam Altman, affiliation: "CEO, OpenAI; former President, Y Combinator", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE, ENERGY_CLIMATE, BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "Ran YC then OpenAI; unusually broad personal deal flow across AI, fusion, longevity and hardware, with an unusually long early-stage record."}
+- {key: greg_brockman, name: Greg Brockman, affiliation: "Co-founder & President, OpenAI", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 5, independence: 3},
+   rationale: "Built OpenAI's engineering organisation after Stripe CTO; sees frontier-model infrastructure needs before the market prices them."}
+- {key: ilya_sutskever, name: Ilya Sutskever, affiliation: "Co-founder & CEO, Safe Superintelligence; former Chief Scientist, OpenAI", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: null, network: 4, capital: 4, independence: 5},
+   rationale: "Co-author of AlexNet and a principal architect of modern deep learning; among the few people whose technical read is genuinely upstream of the market."}
+- {key: andrej_karpathy, name: Andrej Karpathy, affiliation: "Founder, Eureka Labs; former Director of AI, Tesla; founding member, OpenAI", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, TRANSPORT_MOBILITY], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: 2, network: 5, capital: 3, independence: 4},
+   rationale: "Rare combination of frontier research, large-scale production ML and public technical teaching; his attention is a leading indicator in AI tooling."}
+- {key: dario_amodei, name: Dario Amodei, affiliation: "Co-founder & CEO, Anthropic", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE, BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 2, network: 5, capital: 4, independence: 4},
+   rationale: "Physics PhD and computational biologist who led scaling-law work; runs a frontier lab with a distinctive and early view of capability trajectories."}
+- {key: daniela_amodei, name: Daniela Amodei, affiliation: "Co-founder & President, Anthropic", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, CORPORATE_EXECUTIVE], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: null, network: 5, capital: 4, independence: 4},
+   rationale: "Runs the operating side of a frontier lab; exceptional access to the AI supply chain and talent market even without a public investing record."}
+- {key: jared_kaplan, name: Jared Kaplan, affiliation: "Co-founder & Chief Science Officer, Anthropic; Professor of Physics, Johns Hopkins", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 3, independence: 5},
+   rationale: "Theoretical physicist who co-authored the neural scaling laws; his domain read is independent of both venture and product consensus."}
+- {key: chris_olah, name: Chris Olah, affiliation: "Co-founder, Anthropic; interpretability research", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 2, independence: 5},
+   rationale: "Founded mechanistic interpretability as a field; a purely technical node with information orthogonal to capital networks."}
+- {key: yann_lecun, name: Yann LeCun, affiliation: "Turing Award laureate; Professor, NYU; former Chief AI Scientist, Meta", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC], domains: [AI_SOFTWARE, ROBOTICS], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: 2, network: 5, capital: 3, independence: 5},
+   rationale: "Invented convolutional networks; holds publicly contrarian architectural views, which makes his backing a genuinely non-consensus signal."}
+- {key: geoffrey_hinton, name: Geoffrey Hinton, affiliation: "Turing Award and Nobel laureate; Emeritus Professor, University of Toronto", country: CA, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 3, independence: 5},
+   rationale: "Foundational figure in deep learning whose students seeded much of the field; information source almost entirely outside venture circles."}
+- {key: yoshua_bengio, name: Yoshua Bengio, affiliation: "Turing Award laureate; Scientific Director, Mila", country: CA, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 2, independence: 5},
+   rationale: "Deep learning co-founder anchoring the Montreal research ecosystem, structurally independent of the Bay Area pool."}
+- {key: fei_fei_li, name: Fei-Fei Li, affiliation: "Co-founder & CEO, World Labs; Co-Director, Stanford HAI", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR, ACADEMIC], domains: [AI_SOFTWARE, ROBOTICS], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 2, network: 5, capital: 3, independence: 4},
+   rationale: "Created ImageNet, which triggered the deep-learning era; now founding in spatial intelligence with Stanford's full research aperture."}
+- {key: jensen_huang, name: Jensen Huang, affiliation: "Co-founder & CEO, Nvidia", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, CORPORATE_EXECUTIVE], domains: [SEMICONDUCTORS, AI_SOFTWARE, ROBOTICS], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 5, independence: 4},
+   rationale: "Runs the compute chokepoint of the AI economy and therefore sees demand signals from every frontier lab before anyone else."}
+- {key: lisa_su, name: Lisa Su, affiliation: "Chair & CEO, AMD", country: US, agent: 1,
+   archetypes: [CORPORATE_EXECUTIVE, RESEARCH_SCIENTIST], domains: [SEMICONDUCTORS, AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: null, network: 4, capital: 4, independence: 4},
+   rationale: "MIT-trained semiconductor engineer running a top-three AI silicon vendor; unmatched visibility into the compute supply chain."}
+- {key: jim_keller, name: Jim Keller, affiliation: "CEO, Tenstorrent; chip architect (DEC Alpha, AMD K8/Zen, Apple A4/A5, Tesla FSD)", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [SEMICONDUCTORS, AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 3, independence: 5},
+   rationale: "Arguably the most accomplished living microprocessor architect; his technical endorsement in silicon is a strong non-consensus signal."}
+- {key: noam_shazeer, name: Noam Shazeer, affiliation: "Co-lead, Google Gemini; co-founder, Character.AI; co-author of the Transformer", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 4, independence: 4},
+   rationale: "Co-authored 'Attention Is All You Need' and much of the efficiency work behind modern serving; a first-order technical node."}
+- {key: alexandr_wang, name: Alexandr Wang, affiliation: "Founder of Scale AI; Chief AI Officer, Meta", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE, DEFENCE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 3},
+   rationale: "Built the data layer serving nearly every frontier lab and defence AI programme; sees model roadmaps across competing labs."}
+- {key: mira_murati, name: Mira Murati, affiliation: "Founder & CEO, Thinking Machines Lab; former CTO, OpenAI", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 2, network: 5, capital: 4, independence: 4},
+   rationale: "Ran product and research at OpenAI through the GPT-4 era; now founding independently with deep visibility into the talent market."}
+- {key: john_schulman, name: John Schulman, affiliation: "Co-founder of OpenAI; PPO author", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 3, independence: 4},
+   rationale: "Invented core RL algorithms behind RLHF; a technical node whose movement between labs is itself an information event."}
+- {key: aidan_gomez, name: Aidan Gomez, affiliation: "Co-founder & CEO, Cohere; Transformer co-author", country: CA, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 3, independence: 4},
+   rationale: "Transformer co-author running an enterprise-focused frontier lab outside the US hyperscaler orbit."}
+- {key: arthur_mensch, name: Arthur Mensch, affiliation: "Co-founder & CEO, Mistral AI; former DeepMind researcher", country: FR, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 3, independence: 5},
+   rationale: "Leads Europe's principal frontier lab; his deal flow is geographically independent of the Bay Area pool."}
+- {key: clem_delangue, name: Clement Delangue, affiliation: "Co-founder & CEO, Hugging Face", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 4, independence: 4},
+   rationale: "Runs the distribution layer of open-source AI; observes model and tooling adoption curves before they reach revenue."}
+- {key: nat_friedman, name: Nat Friedman, affiliation: "Former CEO, GitHub; co-founder, NFDG; Meta superintelligence leadership", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Ran GitHub through the Copilot era and then one of the most active AI angel books; unusually reconstructable public portfolio."}
+- {key: daniel_gross, name: Daniel Gross, affiliation: "Co-founder of NFDG; co-founder of Safe Superintelligence; Meta", country: US, agent: 1,
+   archetypes: [SUPER_ANGEL, FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Ex-YC partner turned prolific AI-native angel; among the earliest capital into several frontier-model and AI-infrastructure companies."}
+- {key: patrick_collison, name: Patrick Collison, affiliation: "Co-founder & CEO, Stripe; co-founder, Arc Institute", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [FINTECH, AI_SOFTWARE, BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Built the internet's payments layer and co-founded a research institute; spans fintech, AI and life sciences with a long angel record."}
+- {key: john_collison, name: John Collison, affiliation: "Co-founder & President, Stripe", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [FINTECH, AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 3},
+   rationale: "Sees the transactional substrate of the internet economy; strong founder network and substantial personal capital flexibility."}
+- {key: dylan_field, name: Dylan Field, affiliation: "Co-founder & CEO, Figma", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 3},
+   rationale: "Thiel Fellow who built and took public a category-defining design platform; active early-stage angel."}
+- {key: guillermo_rauch, name: Guillermo Rauch, affiliation: "Founder & CEO, Vercel", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 4, network: 4, capital: 4, independence: 4},
+   rationale: "Deeply technical open-source founder with a large and publicly visible developer-tooling angel book."}
+- {key: tobi_lutke, name: Tobias Lutke, affiliation: "Co-founder & CEO, Shopify", country: CA, agent: 1,
+   archetypes: [FOUNDER_OPERATOR], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Engineer-founder of a top e-commerce platform, based outside the US hubs, with an early and public AI-adoption stance."}
+- {key: eric_schmidt, name: Eric Schmidt, affiliation: "Former CEO & Chairman, Google; founder of Innovation Endeavors and Schmidt Futures", country: US, agent: 1,
+   archetypes: [CORPORATE_EXECUTIVE, FAMILY_OFFICE_PRINCIPAL, PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, DEFENCE, BIOTECH_LIFESCIENCES, ENERGY_CLIMATE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Combines hyperscaler operating history, US national-security advisory roles and a multi-vehicle investment apparatus across AI, bio and defence."}
+- {key: mike_krieger, name: Mike Krieger, affiliation: "Chief Product Officer, Anthropic; co-founder, Instagram", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 3, network: 5, capital: 5, independence: 3},
+   rationale: "Consumer-scale founder now inside a frontier lab; unusual dual view of research capability and mass-market product pull."}
+- {key: kevin_systrom, name: Kevin Systrom, affiliation: "Co-founder, Instagram; co-founder, Artifact", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 3, network: 5, capital: 5, independence: 3},
+   rationale: "Consumer-product founder with substantial personal capital and a long-standing Bay Area angel presence."}
+- {key: drew_houston, name: Drew Houston, affiliation: "Co-founder & CEO, Dropbox", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 3},
+   rationale: "Infrastructure-scale founder with a documented angel record across developer and enterprise software."}
+- {key: amjad_masad, name: Amjad Masad, affiliation: "Co-founder & CEO, Replit", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 3, independence: 4},
+   rationale: "Runs a coding-agent platform with direct telemetry on how developers actually adopt AI tooling."}
+- {key: satya_nadella, name: Satya Nadella, affiliation: "Chairman & CEO, Microsoft", country: US, agent: 1,
+   archetypes: [CORPORATE_EXECUTIVE], domains: [AI_SOFTWARE, SEMICONDUCTORS], signal_class: WATCHLIST,
+   scores: {access: 5, technical: 4, early_stage: null, network: 5, capital: 4, independence: 3},
+   rationale: "Maximum institutional access to the AI buildout, but personal investments are essentially unreconstructable -- included to test visibility limits."}
+- {key: kevin_scott, name: Kevin Scott, affiliation: "CTO & EVP of AI, Microsoft", country: US, agent: 1,
+   archetypes: [CORPORATE_EXECUTIVE, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE, SEMICONDUCTORS], signal_class: WATCHLIST,
+   scores: {access: 5, technical: 5, early_stage: null, network: 4, capital: 3, independence: 3},
+   rationale: "Architected Microsoft's AI compute strategy; high technical and access scores, low expected investment visibility."}
+- {key: jeff_dean, name: Jeff Dean, affiliation: "Chief Scientist, Google DeepMind and Google Research", country: US, agent: 1,
+   archetypes: [RESEARCH_SCIENTIST], domains: [AI_SOFTWARE, SEMICONDUCTORS], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: null, network: 4, capital: 4, independence: 4},
+   rationale: "Built much of Google's distributed-systems and TPU stack; a technical node of the first order with limited public investing."}
+- {key: david_luan, name: David Luan, affiliation: "Head of Amazon AGI Lab; co-founder, Adept AI", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 3, independence: 4},
+   rationale: "Led engineering at OpenAI and Google Brain before founding Adept; strong read on agent-infrastructure timing."}
+- {key: emad_mostaque, name: Emad Mostaque, affiliation: "Founder of Stability AI (former CEO); founder, Intelligent Internet", country: GB, agent: 1,
+   archetypes: [FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 3, early_stage: 2, network: 3, capital: 2, independence: 4},
+   rationale: "Included deliberately as a negative-control node: high historical visibility in open-source AI alongside a contested operating record."}
+- {key: aaron_levie, name: Aaron Levie, affiliation: "Co-founder & CEO, Box", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 3, network: 4, capital: 4, independence: 3},
+   rationale: "Long-tenured enterprise SaaS founder with an active angel practice in enterprise AI."}
+- {key: scott_wu, name: Scott Wu, affiliation: "Co-founder & CEO, Cognition", country: US, agent: 1,
+   archetypes: [FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 3, independence: 4},
+   rationale: "Competitive-programming champion building autonomous software engineering; strong technical read on agent capability."}
+
+# --- WORKSTREAM 2: ENERGY / CLIMATE / INDUSTRIAL / DEEP TECH ----------------
+- {key: bill_gates, name: Bill Gates, affiliation: "Co-founder of Microsoft; founder of Breakthrough Energy; Gates Frontier / Cascade Investment", country: US, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [ENERGY_CLIMATE, BIOTECH_LIFESCIENCES, AI_SOFTWARE, AGRICULTURE_FOOD], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Runs the largest dedicated climate deep-tech capital apparatus alongside a global health research network; multi-vehicle structure makes direct vs fund exposure separable."}
+- {key: bob_mumgaard, name: Bob Mumgaard, affiliation: "Co-founder & CEO, Commonwealth Fusion Systems", country: US, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [ENERGY_CLIMATE, INDUSTRIAL_DEEPTECH], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 2, independence: 5},
+   rationale: "MIT plasma physicist commercialising HTS-magnet tokamaks; central node of the fusion supply chain."}
+- {key: dennis_whyte, name: Dennis Whyte, affiliation: "Professor of Nuclear Science & Engineering, MIT; former Director, MIT Plasma Science and Fusion Center", country: US, agent: 2,
+   archetypes: [ACADEMIC, RESEARCH_SCIENTIST], domains: [ENERGY_CLIMATE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 3, technical: 5, early_stage: null, network: 3, capital: 1, independence: 5},
+   rationale: "Academic architect of the ARC/SPARC concept; a purely scientific node whose involvement signals technical credibility in fusion."}
+- {key: david_kirtley, name: David Kirtley, affiliation: "Founder & CEO, Helion Energy", country: US, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [ENERGY_CLIMATE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 2, independence: 5},
+   rationale: "Plasma physicist pursuing a distinct pulsed-fusion approach; independent technical read on fusion engineering risk."}
+- {key: vinod_khosla, name: Vinod Khosla, affiliation: "Founder, Khosla Ventures; co-founder, Sun Microsystems", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [ENERGY_CLIMATE, AI_SOFTWARE, BIOTECH_LIFESCIENCES, INDUSTRIAL_DEEPTECH], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Engineer-founder turned deep-tech investor with a two-decade record of very early, very contrarian science bets; controls his own fund, so vehicle attribution is clean."}
+- {key: john_doerr, name: John Doerr, affiliation: "Chairman, Kleiner Perkins", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [ENERGY_CLIMATE, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "Backed Google and Amazon and led the first cleantech wave; that wave's failures also make him a useful negative-control node."}
+- {key: chris_sacca, name: Chris Sacca, affiliation: "Co-founder, Lowercarbon Capital; founder, Lowercase Capital", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR, SUPER_ANGEL], domains: [ENERGY_CLIMATE, CONSUMER_INTERNET], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "One of the strongest documented early-stage records of the 2010s, redeployed entirely into climate deep tech through a fund he controls."}
+- {key: crystal_sacca, name: Crystal Sacca, affiliation: "Co-founder, Lowercarbon Capital", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [ENERGY_CLIMATE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 4, network: 4, capital: 5, independence: 3},
+   rationale: "Co-principal of a controlled climate fund; correlated with Chris Sacca by construction, which makes the pair a useful independence test case."}
+- {key: josh_wolfe, name: Josh Wolfe, affiliation: "Co-founder & Managing Partner, Lux Capital", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [INDUSTRIAL_DEEPTECH, DEFENCE, BIOTECH_LIFESCIENCES, AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 5, independence: 5},
+   rationale: "Built a firm explicitly around frontier science and defence; unusually early in nuclear, space and defence software relative to consensus venture."}
+- {key: bilal_zuberi, name: Bilal Zuberi, affiliation: "Former General Partner, Lux Capital", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [INDUSTRIAL_DEEPTECH, ROBOTICS, DEFENCE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 4, network: 4, capital: 3, independence: 4},
+   rationale: "MIT chemistry PhD and materials founder turned deep-tech investor; genuine technical diligence capability in hard engineering."}
+- {key: steve_jurvetson, name: Steve Jurvetson, affiliation: "Co-founder, Future Ventures; former Managing Director, DFJ", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [SPACE, TRANSPORT_MOBILITY, QUANTUM, INDUSTRIAL_DEEPTECH], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 5, network: 5, capital: 4, independence: 5},
+   rationale: "Electrical engineer who was among the earliest institutional backers of SpaceX and Tesla; sustained record in physically hard technology."}
+- {key: maryanna_saenko, name: Maryanna Saenko, affiliation: "Co-founder & Partner, Future Ventures", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [INDUSTRIAL_DEEPTECH, ROBOTICS, BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 3, independence: 4},
+   rationale: "Engineering background with a focus on advanced manufacturing and robotics; co-principal of a controlled deep-tech fund."}
+- {key: carmichael_roberts, name: Carmichael Roberts, affiliation: "Co-lead of the Investment Committee, Breakthrough Energy Ventures", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [ENERGY_CLIMATE, MATERIALS], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 4, capital: 4, independence: 4},
+   rationale: "Chemistry PhD who screens the majority of serious climate hard-tech deals through BEV's pipeline."}
+- {key: eric_toone, name: Eric Toone, affiliation: "Technical Lead, Breakthrough Energy Ventures; former ARPA-E Deputy Director", country: US, agent: 2,
+   archetypes: [RESEARCH_SCIENTIST, POLICY_OR_GOVERNMENT], domains: [ENERGY_CLIMATE, MATERIALS], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 2, independence: 5},
+   rationale: "Duke chemistry professor and former ARPA-E leader; his technical screen precedes most climate capital formation."}
+- {key: jigar_shah, name: Jigar Shah, affiliation: "Founder of SunEdison; former Director, US DOE Loan Programs Office", country: US, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, POLICY_OR_GOVERNMENT], domains: [ENERGY_CLIMATE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 4, early_stage: 3, network: 5, capital: 3, independence: 5},
+   rationale: "Ran the largest US energy project-finance book; sees which energy technologies actually reach bankability, a signal orthogonal to venture."}
+- {key: matt_rogers, name: Matt Rogers, affiliation: "Co-founder of Nest; co-founder, Incite.org and Mill", country: US, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, PROFESSIONAL_INVESTOR], domains: [ENERGY_CLIMATE, INDUSTRIAL_DEEPTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 4, independence: 4},
+   rationale: "Hardware engineer-founder who now invests across climate hardware; credible manufacturing-risk judgement."}
+- {key: ion_yadigaroglu, name: Ion Yadigaroglu, affiliation: "Managing Partner, Capricorn Investment Group", country: US, agent: 2,
+   archetypes: [FAMILY_OFFICE_PRINCIPAL, PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [ENERGY_CLIMATE, SPACE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 4, network: 4, capital: 4, independence: 5},
+   rationale: "Astrophysics PhD running mission-driven family capital; early in Tesla, SpaceX and Planet with a mandate independent of standard venture."}
+- {key: michael_liebreich, name: Michael Liebreich, affiliation: "Founder of New Energy Finance (Bloomberg NEF)", country: GB, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, ACADEMIC], domains: [ENERGY_CLIMATE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 2, independence: 5},
+   rationale: "Built the definitive energy-transition data business; publicly sceptical of hydrogen hype, which makes his positive signals informative."}
+- {key: andrew_forrest, name: Andrew Forrest, affiliation: "Founder & Executive Chairman, Fortescue; principal of Tattarang", country: AU, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [ENERGY_CLIMATE, MATERIALS, INDUSTRIAL_DEEPTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 2, network: 4, capital: 5, independence: 5},
+   rationale: "Mining billionaire deploying industrial-scale capital into green hydrogen and metals; information source structurally independent of Silicon Valley."}
+- {key: robert_friedland, name: Robert Friedland, affiliation: "Founder & Executive Co-Chairman, Ivanhoe Mines", country: CA, agent: 2,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [MATERIALS, ENERGY_CLIMATE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Career record of discovering and financing tier-one mineral deposits; the critical-minerals view least correlated with the technology pool."}
+- {key: gina_rinehart, name: Gina Rinehart, affiliation: "Executive Chairman, Hancock Prospecting", country: AU, agent: 2,
+   archetypes: [FAMILY_OFFICE_PRINCIPAL], domains: [MATERIALS, ENERGY_CLIMATE, AGRICULTURE_FOOD], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 2, early_stage: 2, network: 3, capital: 5, independence: 5},
+   rationale: "Very large private resources capital with lithium and rare-earth positioning; included for independence despite limited early-stage venture visibility."}
+- {key: lukas_walton, name: Lukas Walton, affiliation: "Founder, Builders Vision", country: US, agent: 2,
+   archetypes: [FAMILY_OFFICE_PRINCIPAL], domains: [ENERGY_CLIMATE, AGRICULTURE_FOOD], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 2, early_stage: 2, network: 3, capital: 5, independence: 5},
+   rationale: "Large family-office capital directed at oceans, food and energy; information network largely disjoint from the technology pool."}
+- {key: rachel_slaybaugh, name: Rachel Slaybaugh, affiliation: "Partner, DCVC; former Associate Professor of Nuclear Engineering, UC Berkeley", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR, ACADEMIC, RESEARCH_SCIENTIST], domains: [ENERGY_CLIMATE, INDUSTRIAL_DEEPTECH], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 3, independence: 5},
+   rationale: "Nuclear engineering academic turned investor; one of the few capital allocators able to assess reactor physics directly."}
+- {key: shayle_kann, name: Shayle Kann, affiliation: "Partner, Energy Impact Partners", country: US, agent: 2,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [ENERGY_CLIMATE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 3, independence: 4},
+   rationale: "Energy-transition analyst turned investor with a strong public analytical record on climate technology cost curves."}
+
+# --- WORKSTREAM 3: BIOTECH / LIFE SCIENCES ----------------------------------
+- {key: noubar_afeyan, name: Noubar Afeyan, affiliation: "Founder & CEO, Flagship Pioneering; co-founder & Chairman, Moderna", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES, AGRICULTURE_FOOD], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 5, network: 5, capital: 5, independence: 5},
+   rationale: "Biochemical engineering PhD who invents companies rather than sourcing them; controls his own firm, so vehicle attribution is unusually clean."}
+- {key: bob_langer, name: Robert Langer, affiliation: "Institute Professor, MIT; co-founder of Moderna and many others", country: US, agent: 3,
+   archetypes: [ACADEMIC, RESEARCH_SCIENTIST, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES, MATERIALS], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 4, independence: 5},
+   rationale: "Among the most cited engineers alive and co-founder of dozens of biotechs; his founder equity is a dense, highly informative signal."}
+- {key: jennifer_doudna, name: Jennifer Doudna, affiliation: "Nobel laureate; Professor, UC Berkeley; founder, Innovative Genomics Institute", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 3, independence: 5},
+   rationale: "Co-discovered CRISPR-Cas9 genome editing; scientific founder status is a direct technical signal in gene editing."}
+- {key: feng_zhang, name: Feng Zhang, affiliation: "Core Member, Broad Institute; Professor, MIT", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 3, independence: 5},
+   rationale: "Pioneer of CRISPR and optogenetics and serial scientific founder; among the most repeatedly early technical nodes in genetic medicine."}
+- {key: david_liu, name: David Liu, affiliation: "Core Institute Member & Director of the Merkin Institute, Broad Institute; Professor, Harvard", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 3, independence: 5},
+   rationale: "Invented base and prime editing; founds companies directly off his own platform inventions."}
+- {key: george_church, name: George Church, affiliation: "Professor of Genetics, Harvard Medical School", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 3, independence: 5},
+   rationale: "Co-founder of a very large number of genomics companies over four decades; extremely dense founder-equity signal."}
+- {key: bob_nelsen, name: Robert Nelsen, affiliation: "Co-founder & Managing Director, ARCH Venture Partners", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Co-founded ARCH and seeded Illumina, Juno and Sana at formation; one of the strongest documented early records in life sciences."}
+- {key: kristina_burow, name: Kristina Burow, affiliation: "Managing Director, ARCH Venture Partners", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 4, network: 4, capital: 4, independence: 3},
+   rationale: "Chemist and company-formation investor at ARCH; correlated with Nelsen by firm, useful for the independence adjustment."}
+- {key: arie_belldegrun, name: Arie Belldegrun, affiliation: "Founder of Kite Pharma and Allogene; co-founder, Vida Ventures and Bellco Capital", country: US, agent: 3,
+   archetypes: [FOUNDER_OPERATOR, PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Urologic oncologist who built and sold Kite for ~$11.9bn and now invests through vehicles he controls; clean separation of personal vs fund exposure."}
+- {key: daphne_koller, name: Daphne Koller, affiliation: "Founder & CEO, insitro; co-founder, Coursera", country: US, agent: 3,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST, ACADEMIC], domains: [BIOTECH_LIFESCIENCES, AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 4, independence: 5},
+   rationale: "Stanford ML professor operating at the AI-biology interface; one of the few nodes credible in both domains simultaneously."}
+- {key: patrick_hsu, name: Patrick Hsu, affiliation: "Co-founder & Core Investigator, Arc Institute; Assistant Professor, UC Berkeley", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR, ACADEMIC], domains: [BIOTECH_LIFESCIENCES, AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 5, capital: 3, independence: 5},
+   rationale: "CRISPR and AI-biology researcher co-leading a new-model research institute funded outside the NIH system."}
+- {key: silvana_konermann, name: Silvana Konermann, affiliation: "Co-founder & Executive Director, Arc Institute; Assistant Professor, Stanford", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: null, network: 4, capital: 2, independence: 5},
+   rationale: "Molecular biologist running an institute deliberately structured to fund work conventional grant bodies will not."}
+- {key: hal_barron, name: Hal Barron, affiliation: "CEO, Altos Labs; former Chief Scientific Officer, GSK", country: US, agent: 3,
+   archetypes: [CORPORATE_EXECUTIVE, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: 2, network: 5, capital: 3, independence: 4},
+   rationale: "Cardiologist who ran R&D at Genentech, Calico and GSK; unusually complete view of what actually clears clinical development."}
+- {key: rick_klausner, name: Richard Klausner, affiliation: "Chief Scientist, Altos Labs; former Director, US National Cancer Institute", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, POLICY_OR_GOVERNMENT, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 4, independence: 5},
+   rationale: "Former NCI director and co-founder of Grail, Juno and Lyell; bridges federal science, philanthropy and company formation."}
+- {key: jeff_huber, name: Jeffrey Huber, affiliation: "Founding CEO of Grail; former SVP, Google", country: US, agent: 3,
+   archetypes: [FOUNDER_OPERATOR, CORPORATE_EXECUTIVE], domains: [BIOTECH_LIFESCIENCES, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 4, independence: 4},
+   rationale: "Google engineering leader who built a cancer-screening company; credible across computation and clinical diagnostics."}
+- {key: eric_lander, name: Eric Lander, affiliation: "Founding Director, Broad Institute; former US Presidential Science Advisor", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC, POLICY_OR_GOVERNMENT], domains: [BIOTECH_LIFESCIENCES], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 3, independence: 5},
+   rationale: "Led the Human Genome Project analysis and built the Broad; genomics company formation flows through his network."}
+- {key: carl_june, name: Carl June, affiliation: "Professor of Immunotherapy, University of Pennsylvania", country: US, agent: 3,
+   archetypes: [RESEARCH_SCIENTIST, ACADEMIC], domains: [BIOTECH_LIFESCIENCES], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 2, independence: 5},
+   rationale: "Pioneered CAR-T cell therapy; a clinical-translation node whose involvement is a direct technical credential in cell therapy."}
+- {key: john_maraganore, name: John Maraganore, affiliation: "Founding CEO of Alnylam Pharmaceuticals (former)", country: US, agent: 3,
+   archetypes: [CORPORATE_EXECUTIVE, PROFESSIONAL_INVESTOR], domains: [BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 5, capital: 4, independence: 4},
+   rationale: "Took RNAi from contested science to approved medicines; now an unusually active board member and advisor across private biotech."}
+- {key: vijay_pande, name: Vijay Pande, affiliation: "General Partner, Andreessen Horowitz (Bio + Health); founder of Folding@home", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR, ACADEMIC, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 4, independence: 3},
+   rationale: "Computational chemist turned investor at the computation-biology boundary; strongly correlated with the a16z network."}
+- {key: jorge_conde, name: Jorge Conde, affiliation: "General Partner, Andreessen Horowitz (Bio + Health); co-founder, Knome", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 3, independence: 3},
+   rationale: "Genomics founder turned investor; correlated with Pande by firm, which the independence adjustment must capture."}
+- {key: krishna_yeshwant, name: Krishna Yeshwant, affiliation: "General Partner, GV (Google Ventures); physician", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES, HEALTHCARE_SERVICES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 4, capital: 4, independence: 3},
+   rationale: "Practising physician and engineer investing from a corporate-backed fund; clinically grounded technical diligence."}
+- {key: peter_kolchinsky, name: Peter Kolchinsky, affiliation: "Founder & Managing Partner, RA Capital Management", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 4, capital: 5, independence: 4},
+   rationale: "Virology PhD running a crossover fund with unusually deep scientific diligence; visible through public filings."}
+- {key: oleg_nodelman, name: Oleg Nodelman, affiliation: "Founder, EcoR1 Capital", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Concentrated biotech specialist whose positions are visible in 13F filings, making exposure unusually verifiable."}
+- {key: eli_casdin, name: Eli Casdin, affiliation: "Founder & Chief Investment Officer, Casdin Capital", country: US, agent: 3,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 4, independence: 4},
+   rationale: "Life-sciences tools specialist active in both private rounds and public positions, with filing-level visibility."}
+- {key: alex_zhavoronkov, name: Alex Zhavoronkov, affiliation: "Founder & CEO, Insilico Medicine", country: HK, agent: 3,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [BIOTECH_LIFESCIENCES, AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 3, technical: 5, early_stage: 2, network: 3, capital: 2, independence: 5},
+   rationale: "Runs one of the first generative-chemistry drug pipelines to reach the clinic; geographically and institutionally independent."}
+- {key: stephane_bancel, name: Stephane Bancel, affiliation: "CEO, Moderna", country: US, agent: 3,
+   archetypes: [CORPORATE_EXECUTIVE, FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 2, network: 5, capital: 5, independence: 4},
+   rationale: "Scaled mRNA from platform risk to global deployment; deep view of biomanufacturing and regulatory constraints."}
+
+# --- WORKSTREAM 4: SPACE / DEFENCE / ROBOTICS -------------------------------
+- {key: elon_musk, name: Elon Musk, affiliation: "CEO of SpaceX and Tesla; founder of xAI, Neuralink and The Boring Company", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR], domains: [SPACE, TRANSPORT_MOBILITY, AI_SOFTWARE, ROBOTICS, SEMICONDUCTORS], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 5, independence: 5},
+   rationale: "Simultaneously operates at the frontier of launch, energy, AI and neurotech; founder equity dominates his graph, which must be kept separate from selection signal."}
+- {key: gwynne_shotwell, name: Gwynne Shotwell, affiliation: "President & COO, SpaceX", country: US, agent: 4,
+   archetypes: [CORPORATE_EXECUTIVE], domains: [SPACE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 5, early_stage: null, network: 4, capital: 4, independence: 4},
+   rationale: "Mechanical engineer running commercial launch operations; sees the space supply chain and customer demand curve in full."}
+- {key: tom_mueller, name: Tom Mueller, affiliation: "Founder & CEO, Impulse Space; founding employee and former CTO of Propulsion, SpaceX", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [SPACE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 4, independence: 5},
+   rationale: "Designed the Merlin engine family; among the most credible propulsion engineers alive and an active space angel."}
+- {key: peter_beck, name: Peter Beck, affiliation: "Founder & CEO, Rocket Lab", country: NZ, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [SPACE, DEFENCE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 4, independence: 5},
+   rationale: "Self-taught engineer who built an orbital launch company outside the US ecosystem; strongly independent information source."}
+- {key: will_marshall, name: Will Marshall, affiliation: "Co-founder & CEO, Planet Labs; former NASA scientist", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [SPACE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 3, independence: 5},
+   rationale: "Physics PhD who pioneered small-satellite constellations; direct view of Earth-observation economics."}
+- {key: jared_isaacman, name: Jared Isaacman, affiliation: "Founder & CEO, Shift4; commander of Inspiration4 and Polaris Dawn", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [SPACE, FINTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 2, network: 4, capital: 5, independence: 5},
+   rationale: "Payments founder who privately financed crewed spaceflight; unusual combination of operating capital and space access."}
+- {key: palmer_luckey, name: Palmer Luckey, affiliation: "Founder, Anduril Industries; founder of Oculus", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [DEFENCE, ROBOTICS, AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 5, independence: 5},
+   rationale: "Hardware inventor who built two category-creating companies; his defence-technology read long preceded the sector's repricing."}
+- {key: trae_stephens, name: Trae Stephens, affiliation: "Partner, Founders Fund; co-founder & Executive Chairman, Anduril Industries", country: US, agent: 4,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [DEFENCE, SPACE, AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Ex-Palantir defence operator who co-founded Anduril and invests across American Dynamism; early to defence tech by several years."}
+- {key: brian_schimpf, name: Brian Schimpf, affiliation: "Co-founder & CEO, Anduril Industries; former Director of Engineering, Palantir", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR], domains: [DEFENCE, ROBOTICS], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 4, independence: 4},
+   rationale: "Engineering leader building autonomous defence systems at scale; credible on the hardware-software integration problem."}
+- {key: peter_thiel, name: Peter Thiel, affiliation: "Co-founder of Founders Fund, Palantir and PayPal; principal of Thiel Capital", country: US, agent: 4,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [DEFENCE, AI_SOFTWARE, BIOTECH_LIFESCIENCES, CRYPTO, SPACE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 5},
+   rationale: "First outside investor in Facebook and an early backer of SpaceX and Palantir; operates multiple distinguishable vehicles, so attribution must be handled carefully."}
+- {key: alex_karp, name: Alexander Karp, affiliation: "Co-founder & CEO, Palantir Technologies", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, CORPORATE_EXECUTIVE], domains: [DEFENCE, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 2, network: 4, capital: 5, independence: 5},
+   rationale: "Runs the dominant Western defence-software company; visibility into government AI adoption unlike anyone in venture."}
+- {key: joe_lonsdale, name: Joe Lonsdale, affiliation: "Founder & Managing Partner, 8VC; co-founder, Palantir Technologies", country: US, agent: 4,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [DEFENCE, HEALTHCARE_SERVICES, INDUSTRIAL_DEEPTECH], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Palantir co-founder running a fund he controls; consistent early positioning in defence and industrial software."}
+- {key: stephen_cohen, name: Stephen Cohen, affiliation: "Co-founder & President, Palantir Technologies", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR], domains: [DEFENCE, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 5, independence: 4},
+   rationale: "Technical co-founder of Palantir with substantial personal capital; low public profile relative to influence."}
+- {key: katherine_boyle, name: Katherine Boyle, affiliation: "General Partner, Andreessen Horowitz (American Dynamism)", country: US, agent: 4,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [DEFENCE, SPACE, INDUSTRIAL_DEEPTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 4, network: 5, capital: 4, independence: 3},
+   rationale: "Defined the American Dynamism investment category; correlated with the a16z network by construction."}
+- {key: david_ulevitch, name: David Ulevitch, affiliation: "General Partner, Andreessen Horowitz; founder of OpenDNS", country: US, agent: 4,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [DEFENCE, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 4, network: 4, capital: 4, independence: 3},
+   rationale: "Security founder turned investor in American Dynamism and enterprise software."}
+- {key: raj_shah, name: Raj Shah, affiliation: "Managing Partner, Shield Capital; former Director, US Defense Innovation Unit", country: US, agent: 4,
+   archetypes: [PROFESSIONAL_INVESTOR, POLICY_OR_GOVERNMENT], domains: [DEFENCE, AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 5, technical: 3, early_stage: 3, network: 4, capital: 3, independence: 5},
+   rationale: "Former fighter pilot who ran DIU; sees defence procurement reality ahead of the venture market."}
+- {key: brett_adcock, name: Brett Adcock, affiliation: "Founder & CEO, Figure AI; founder of Archer Aviation and Vettery", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [ROBOTICS, TRANSPORT_MOBILITY, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Serial hard-technology founder across eVTOL and humanoid robotics with substantial personal capital."}
+- {key: marc_raibert, name: Marc Raibert, affiliation: "Founder of Boston Dynamics; Executive Director, The AI Institute", country: US, agent: 4,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR, ACADEMIC], domains: [ROBOTICS], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 3, independence: 5},
+   rationale: "Defined modern legged robotics over four decades; the strongest single technical credential in the field."}
+- {key: rodney_brooks, name: Rodney Brooks, affiliation: "Co-founder of iRobot, Rethink Robotics and Robust.AI; Emeritus Professor, MIT", country: US, agent: 4,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR, ACADEMIC], domains: [ROBOTICS, AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 4, capital: 3, independence: 5},
+   rationale: "Former MIT CSAIL director and serial robotics founder; publicly sceptical of hype, which makes his positive signals informative."}
+- {key: daniela_rus, name: Daniela Rus, affiliation: "Director, MIT CSAIL; Professor of Electrical Engineering and Computer Science", country: US, agent: 4,
+   archetypes: [ACADEMIC, RESEARCH_SCIENTIST], domains: [ROBOTICS, AI_SOFTWARE], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 2, independence: 5},
+   rationale: "Runs the largest academic robotics and AI lab in the US; sees research-stage technology years before commercialisation."}
+- {key: sebastian_thrun, name: Sebastian Thrun, affiliation: "Founder of Google X, Waymo, Udacity and Kittyhawk; Adjunct Professor, Stanford", country: US, agent: 4,
+   archetypes: [RESEARCH_SCIENTIST, FOUNDER_OPERATOR, ACADEMIC], domains: [ROBOTICS, TRANSPORT_MOBILITY, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 3, network: 5, capital: 4, independence: 4},
+   rationale: "Won the DARPA Grand Challenge and founded Google's self-driving programme; long record at the robotics-AI boundary."}
+- {key: chris_urmson, name: Chris Urmson, affiliation: "Co-founder & CEO, Aurora Innovation; former CTO of Google's self-driving project", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [ROBOTICS, TRANSPORT_MOBILITY], signal_class: DOMAIN_SPECIALIST,
+   scores: {access: 4, technical: 5, early_stage: 2, network: 4, capital: 4, independence: 4},
+   rationale: "CMU roboticist who led Google's autonomy programme; credible read on autonomy timelines and sensor economics."}
+- {key: eric_migicovsky, name: Eric Migicovsky, affiliation: "Founder of Pebble; Group Partner, Y Combinator (former)", country: US, agent: 4,
+   archetypes: [FOUNDER_OPERATOR], domains: [ROBOTICS, CONSUMER_INTERNET], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 2, independence: 4},
+   rationale: "Hardware founder whose company failed commercially; a deliberate negative-control node for hardware outcome analysis."}
+
+# --- WORKSTREAM 5: MAJOR VENTURE INVESTORS / SUPER-ANGELS -------------------
+- {key: marc_andreessen, name: Marc Andreessen, affiliation: "Co-founder & General Partner, Andreessen Horowitz; co-author of Mosaic", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, CRYPTO, DEFENCE, CONSUMER_INTERNET], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "Wrote the first widely used web browser and co-founded the most prominent venture firm; sits at the centre of the consensus network, so herding risk is high by construction."}
+- {key: ben_horowitz, name: Ben Horowitz, affiliation: "Co-founder & General Partner, Andreessen Horowitz", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, CRYPTO], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "Operating-CEO background and co-founder of a16z; heavily correlated with Andreessen for independence purposes."}
+- {key: chris_dixon, name: Chris Dixon, affiliation: "General Partner, Andreessen Horowitz (a16z crypto)", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [CRYPTO, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 4, independence: 3},
+   rationale: "Early Coinbase backer with a strong pre-consensus record in crypto infrastructure."}
+- {key: martin_casado, name: Martin Casado, affiliation: "General Partner, Andreessen Horowitz; co-founder of Nicira", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 4, independence: 3},
+   rationale: "Stanford PhD who created software-defined networking; one of the more technically capable partners in large-fund venture."}
+- {key: reid_hoffman, name: Reid Hoffman, affiliation: "Co-founder of LinkedIn and Inflection AI; Partner Emeritus, Greylock", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR, SUPER_ANGEL], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "Among the strongest documented angel records of the 2000s and an early OpenAI backer; extremely well-connected but highly correlated."}
+- {key: keith_rabois, name: Keith Rabois, affiliation: "General Partner, Khosla Ventures; former partner, Founders Fund", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, SUPER_ANGEL, FOUNDER_OPERATOR], domains: [FINTECH, HEALTHCARE_SERVICES, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 2, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "PayPal-lineage operator with a long documented seed record; a central node of the correlated PayPal network."}
+- {key: roelof_botha, name: Roelof Botha, affiliation: "Senior Steward, Sequoia Capital; former CFO, PayPal", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, CORPORATE_EXECUTIVE], domains: [AI_SOFTWARE, FINTECH, CONSUMER_INTERNET], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "Actuarial background and a sustained record of very early positions in YouTube, Instagram and Square."}
+- {key: shaun_maguire, name: Shaun Maguire, affiliation: "Partner, Sequoia Capital; physics PhD", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [SPACE, DEFENCE, AI_SOFTWARE, QUANTUM], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 4, network: 5, capital: 4, independence: 4},
+   rationale: "Caltech physics PhD who worked on DARPA programmes before investing; technically able to diligence launch, quantum and defence systems."}
+- {key: alfred_lin, name: Alfred Lin, affiliation: "Partner, Sequoia Capital; former COO, Zappos", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, CORPORATE_EXECUTIVE], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 4, independence: 3},
+   rationale: "Early Airbnb and DoorDash backer; correlated with the broader Sequoia cluster."}
+- {key: michael_moritz, name: Michael Moritz, affiliation: "Partner Emeritus, Sequoia Capital; co-founder, Crankstart", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FAMILY_OFFICE_PRINCIPAL], domains: [CONSUMER_INTERNET, FINTECH, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 2, early_stage: 5, network: 5, capital: 5, independence: 3},
+   rationale: "Backed Google, Yahoo, PayPal and Stripe at formation; one of the longest records in venture."}
+- {key: doug_leone, name: Doug Leone, affiliation: "Partner Emeritus, Sequoia Capital", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 4, network: 5, capital: 5, independence: 3},
+   rationale: "Led Sequoia's global expansion; long record in enterprise and infrastructure."}
+- {key: elad_gil, name: Elad Gil, affiliation: "Independent investor; co-founder of Color Genomics and Mixer Labs", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, FOUNDER_OPERATOR, PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, BIOTECH_LIFESCIENCES, FINTECH], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "MIT biology PhD running one of the largest solo capital books; early in Stripe, Airbnb, Figma, Anduril and several AI labs, with a reconstructable public record."}
+- {key: naval_ravikant, name: Naval Ravikant, affiliation: "Co-founder of AngelList and Airchat", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, FOUNDER_OPERATOR], domains: [CONSUMER_INTERNET, CRYPTO, AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Built the infrastructure of angel investing and personally seeded Twitter, Uber and Postmates; very large but partially opaque syndicate exposure."}
+- {key: balaji_srinivasan, name: Balaji Srinivasan, affiliation: "Former CTO of Coinbase; former General Partner, Andreessen Horowitz; co-founder of Counsyl", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, FOUNDER_OPERATOR, RESEARCH_SCIENTIST], domains: [CRYPTO, BIOTECH_LIFESCIENCES, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 4, network: 4, capital: 5, independence: 5},
+   rationale: "Stanford engineering PhD and genomics founder with a consistently non-consensus thesis; independent of mainstream venture."}
+- {key: garry_tan, name: Garry Tan, affiliation: "President & CEO, Y Combinator; co-founder of Initialized Capital and Posterous", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, CRYPTO, FINTECH], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 5, capital: 4, independence: 3},
+   rationale: "Runs the largest seed-stage funnel in the world and was very early in Coinbase and Instacart."}
+- {key: paul_graham, name: Paul Graham, affiliation: "Co-founder, Y Combinator; co-founder of Viaweb", country: GB, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Created the modern accelerator model; a structural node in early-stage company formation rather than an active current investor."}
+- {key: jessica_livingston, name: Jessica Livingston, affiliation: "Co-founder, Y Combinator", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 2, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Co-founded YC and led founder selection through its formative cohorts."}
+- {key: sarah_guo, name: Sarah Guo, affiliation: "Founder & Managing Partner, Conviction; former General Partner, Greylock", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 4, independence: 4},
+   rationale: "Raised a dedicated AI-native fund she controls before the category consensus formed; high-density AI deal flow."}
+- {key: mike_speiser, name: Mike Speiser, affiliation: "Managing Director, Sutter Hill Ventures", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 5, network: 4, capital: 5, independence: 5},
+   rationale: "Incubated and served as founding CEO of Snowflake and Lacework; a company-formation model that is rare and unusually early."}
+- {key: bill_gurley, name: Bill Gurley, affiliation: "General Partner Emeritus, Benchmark", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 4},
+   rationale: "Early Uber backer and a persistent public critic of venture excess; useful as a scepticism-weighted node."}
+- {key: brad_gerstner, name: Brad Gerstner, affiliation: "Founder & CEO, Altimeter Capital", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 3, network: 5, capital: 5, independence: 3},
+   rationale: "Crossover investor whose public positions are visible in filings, enabling verification that private-only investors do not permit."}
+- {key: philippe_laffont, name: Philippe Laffont, affiliation: "Founder, Coatue Management", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, SEMICONDUCTORS], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 3, network: 5, capital: 5, independence: 3},
+   rationale: "Tiger-lineage crossover manager active in late-stage AI; filings give partial verifiability."}
+- {key: chase_coleman, name: Chase Coleman, affiliation: "Founder, Tiger Global Management", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, FINTECH, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 2, early_stage: 3, network: 5, capital: 5, independence: 3},
+   rationale: "Very large crossover book; the 2021 vintage also makes Tiger a useful negative-control network for hype-cycle analysis."}
+- {key: hemant_taneja, name: Hemant Taneja, affiliation: "CEO & Managing Director, General Catalyst", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [HEALTHCARE_SERVICES, AI_SOFTWARE, FINTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 3},
+   rationale: "MIT-trained engineer running a large multi-stage platform with a health-systems strategy distinct from standard venture."}
+- {key: fred_wilson, name: Fred Wilson, affiliation: "Co-founder & Partner, Union Square Ventures", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [CRYPTO, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 5, network: 4, capital: 4, independence: 4},
+   rationale: "New York-based, thesis-driven investor early in Twitter, Coinbase and Etsy; geographically less correlated with the Bay Area pool."}
+- {key: albert_wenger, name: Albert Wenger, affiliation: "Managing Partner, Union Square Ventures", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, RESEARCH_SCIENTIST], domains: [CRYPTO, ENERGY_CLIMATE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 5, early_stage: 4, network: 4, capital: 4, independence: 4},
+   rationale: "MIT PhD in information technology with a distinctive climate and crypto thesis."}
+- {key: mike_maples, name: Mike Maples Jr, affiliation: "Co-founder & Partner, Floodgate", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, SUPER_ANGEL], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 5, network: 4, capital: 4, independence: 4},
+   rationale: "Seed investor in Twitter, Lyft and Okta at pre-consensus stages; explicitly focused on non-consensus theses."}
+- {key: ron_conway, name: Ron Conway, affiliation: "Founder, SV Angel", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL], domains: [CONSUMER_INTERNET, AI_SOFTWARE, FINTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 2, early_stage: 5, network: 5, capital: 4, independence: 3},
+   rationale: "The archetypal Silicon Valley super-angel with an extremely broad book; breadth reduces per-edge informativeness."}
+- {key: aydin_senkut, name: Aydin Senkut, affiliation: "Founder & Managing Partner, Felicis", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, SUPER_ANGEL], domains: [AI_SOFTWARE, FINTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 5, network: 4, capital: 4, independence: 4},
+   rationale: "Early Google employee turned seed investor with early positions in Shopify, Fitbit and Adyen."}
+- {key: immad_akhund, name: Immad Akhund, affiliation: "Co-founder & CEO, Mercury; former partner, Y Combinator", country: US, agent: 5,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [FINTECH, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 4, network: 5, capital: 4, independence: 4},
+   rationale: "Runs banking for a large share of US startups and angel-invests prolifically with an unusually public portfolio."}
+- {key: gokul_rajaram, name: Gokul Rajaram, affiliation: "Board member and investor; former product leader at Google, Facebook, Square and DoorDash", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, CORPORATE_EXECUTIVE], domains: [FINTECH, CONSUMER_INTERNET, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 4, network: 5, capital: 4, independence: 3},
+   rationale: "Built Google AdSense and Facebook Ads; very active and publicly documented angel."}
+- {key: lachy_groom, name: Lachy Groom, affiliation: "Founder, Lachy Groom Fund; former head of issuing, Stripe", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, FINTECH], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 4, network: 5, capital: 5, independence: 3},
+   rationale: "Stripe alumnus running large solo-GP vehicles; deeply embedded in the Stripe-adjacent founder network."}
+- {key: alexis_ohanian, name: Alexis Ohanian, affiliation: "Founder, Seven Seven Six; co-founder of Reddit and Initialized Capital", country: US, agent: 5,
+   archetypes: [FOUNDER_OPERATOR, PROFESSIONAL_INVESTOR], domains: [CONSUMER_INTERNET, CRYPTO], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Reddit co-founder running a fund he controls; strong consumer and community deal flow."}
+- {key: josh_kushner, name: Joshua Kushner, affiliation: "Founder & Managing Partner, Thrive Capital; co-founder, Oscar Health", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, FINTECH, HEALTHCARE_SERVICES], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Controls Thrive and has concentrated heavily into OpenAI, Stripe and Instagram at pivotal moments."}
+- {key: lee_fixel, name: Lee Fixel, affiliation: "Founder, Addition; former partner, Tiger Global", country: US, agent: 5,
+   archetypes: [PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 2, early_stage: 4, network: 4, capital: 5, independence: 4},
+   rationale: "Led Tiger's private-growth franchise and now runs his own firm; early in Flipkart and Peloton."}
+- {key: ali_partovi, name: Ali Partovi, affiliation: "Co-founder & CEO, Neo; co-founder of Code.org and LinkExchange", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 5, network: 5, capital: 4, independence: 4},
+   rationale: "Early angel in Facebook, Dropbox and Airbnb; now runs a talent-first fund with a distinct sourcing channel."}
+- {key: hadi_partovi, name: Hadi Partovi, affiliation: "Co-founder & CEO, Code.org; angel investor", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, FOUNDER_OPERATOR], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 5, network: 5, capital: 4, independence: 3},
+   rationale: "Early angel in Facebook, Dropbox and Airbnb; correlated with Ali Partovi by family relationship, a clean independence test."}
+- {key: cyan_banister, name: Cyan Banister, affiliation: "Partner, Long Journey Ventures; former partner, Founders Fund", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, PROFESSIONAL_INVESTOR], domains: [SPACE, AI_SOFTWARE, CRYPTO], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 5, network: 4, capital: 4, independence: 5},
+   rationale: "Angel in SpaceX, Uber and DeepMind at very early stages with an explicitly unconventional sourcing method."}
+- {key: oren_zeev, name: Oren Zeev, affiliation: "Founding Partner, Zeev Ventures", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL, PROFESSIONAL_INVESTOR], domains: [CONSUMER_INTERNET, FINTECH, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 5, network: 4, capital: 5, independence: 4},
+   rationale: "Solo GP with early positions in Audible, Chegg, Houzz and Tipalti, operating outside standard partnership dynamics."}
+- {key: jason_calacanis, name: Jason Calacanis, affiliation: "Founder, LAUNCH; angel investor", country: US, agent: 5,
+   archetypes: [SUPER_ANGEL], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 2, early_stage: 4, network: 4, capital: 3, independence: 3},
+   rationale: "Early Uber angel with a very broad, publicly promoted book; breadth and promotion lower per-edge informativeness."}
+
+# --- WORKSTREAM 6: BILLIONAIRE FOUNDERS / FAMILY OFFICES / CROSSOVER --------
+- {key: jeff_bezos, name: Jeff Bezos, affiliation: "Founder & Executive Chairman of Amazon; founder of Blue Origin and Bezos Expeditions", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [SPACE, AI_SOFTWARE, BIOTECH_LIFESCIENCES, ENERGY_CLIMATE], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Early Google investor, founder of a launch company and a large multi-vehicle private investor; separating Bezos Expeditions from personal and from Amazon is essential here."}
+- {key: larry_page, name: Larry Page, affiliation: "Co-founder of Google; principal of Rubicon and related vehicles", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, TRANSPORT_MOBILITY, ENERGY_CLIMATE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Co-invented PageRank and personally financed flying-car and fusion ventures; deliberately low-visibility, a genuine reconstructability test."}
+- {key: sergey_brin, name: Sergey Brin, affiliation: "Co-founder of Google; principal of Bayshore Global Management", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, BIOTECH_LIFESCIENCES, ENERGY_CLIMATE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 5, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Technically active again on Gemini while running a family office funding Parkinson's research and airships; low but non-zero visibility."}
+- {key: michael_dell, name: Michael Dell, affiliation: "Chairman & CEO, Dell Technologies; principal of DFO Management (MSD)", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [SEMICONDUCTORS, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 3, network: 5, capital: 5, independence: 4},
+   rationale: "Runs a major AI-infrastructure vendor alongside a large family office; hardware demand visibility plus deployable private capital."}
+- {key: steve_ballmer, name: Steve Ballmer, affiliation: "Former CEO of Microsoft; co-founder of USAFacts", country: US, agent: 6,
+   archetypes: [CORPORATE_EXECUTIVE, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 3, early_stage: 2, network: 4, capital: 5, independence: 4},
+   rationale: "Very large capital base but a mostly public-markets and philanthropic posture; included to test the wealth-without-frontier-access hypothesis."}
+- {key: jack_dorsey, name: Jack Dorsey, affiliation: "Co-founder of Twitter and Block; founder of Start Small", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [CRYPTO, FINTECH, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Consistently non-consensus bitcoin and decentralised-protocol positioning, distinct from the AI-centric pool."}
+- {key: brian_armstrong, name: Brian Armstrong, affiliation: "Co-founder & CEO, Coinbase; co-founder of NewLimit and ResearchHub", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [CRYPTO, BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Crypto operator who also co-founded an epigenetic-reprogramming company; an unusual cross-domain node."}
+- {key: brian_chesky, name: Brian Chesky, affiliation: "Co-founder & CEO, Airbnb", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, SUPER_ANGEL], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 2, early_stage: 3, network: 5, capital: 5, independence: 3},
+   rationale: "Consumer founder with close ties to OpenAI leadership and a growing personal investment footprint."}
+- {key: daniel_ek, name: Daniel Ek, affiliation: "Founder & CEO, Spotify; founder of Prima Materia and Neko Health", country: SE, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [HEALTHCARE_SERVICES, DEFENCE, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "European founder deploying through a named vehicle into defence AI and preventive healthcare; independent of the US pool."}
+- {key: xavier_niel, name: Xavier Niel, affiliation: "Founder of Iliad and Station F; principal of NJJ Capital and Kima Ventures", country: FR, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 5, network: 5, capital: 5, independence: 5},
+   rationale: "Runs one of the highest-volume angel vehicles in Europe and backed Mistral early; structurally independent deal flow."}
+- {key: yuri_milner, name: Yuri Milner, affiliation: "Founder of DST Global and the Breakthrough Prize; co-founder of Altos Labs", country: IL, agent: 6,
+   archetypes: [PROFESSIONAL_INVESTOR, FAMILY_OFFICE_PRINCIPAL, RESEARCH_SCIENTIST], domains: [AI_SOFTWARE, BIOTECH_LIFESCIENCES, CONSUMER_INTERNET], signal_class: CORE_HIGH_SIGNAL,
+   scores: {access: 5, technical: 4, early_stage: 4, network: 5, capital: 5, independence: 5},
+   rationale: "Trained physicist who made the defining growth bets in Facebook and Chinese internet, then financed longevity science; a distinctive information network."}
+- {key: masayoshi_son, name: Masayoshi Son, affiliation: "Founder, Chairman & CEO, SoftBank Group", country: JP, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, PROFESSIONAL_INVESTOR], domains: [AI_SOFTWARE, SEMICONDUCTORS, ROBOTICS], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 5, technical: 3, early_stage: 3, network: 5, capital: 5, independence: 5},
+   rationale: "Controls Arm and deploys at unmatched scale into AI infrastructure; the Vision Fund vintage is also a valuable negative control."}
+- {key: li_ka_shing, name: Li Ka-shing, affiliation: "Founder of CK Hutchison; founder of the Li Ka Shing Foundation and Horizons Ventures", country: HK, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [BIOTECH_LIFESCIENCES, AI_SOFTWARE, AGRICULTURE_FOOD], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 2, early_stage: 4, network: 4, capital: 5, independence: 5},
+   rationale: "Horizons Ventures was early in DeepMind, Zoom, Spotify and Impossible Foods; an Asian information network largely disjoint from the US pool."}
+- {key: bernard_arnault, name: Bernard Arnault, affiliation: "Chairman & CEO of LVMH; principal of Aglae Ventures", country: FR, agent: 6,
+   archetypes: [FAMILY_OFFICE_PRINCIPAL, CORPORATE_EXECUTIVE], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 2, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "European luxury capital deployed through a named venture arm; independent network, limited frontier-technology depth."}
+- {key: nikolay_storonsky, name: Nikolay Storonsky, affiliation: "Co-founder & CEO, Revolut; founder of QuantumLight Capital", country: GB, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [FINTECH, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Fintech founder running a quantitative venture fund he controls; European and methodologically distinct."}
+- {key: david_velez, name: David Velez, affiliation: "Founder & CEO, Nubank", country: BR, agent: 6,
+   archetypes: [FOUNDER_OPERATOR], domains: [FINTECH], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 3, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Built Latin America's largest digital bank; a regional information network almost entirely outside the US graph."}
+- {key: marcos_galperin, name: Marcos Galperin, affiliation: "Co-founder & CEO, MercadoLibre", country: AR, agent: 6,
+   archetypes: [FOUNDER_OPERATOR], domains: [CONSUMER_INTERNET, FINTECH], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 2, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Latin American platform founder with regional deal flow disjoint from the US and European pools."}
+- {key: melanie_perkins, name: Melanie Perkins, affiliation: "Co-founder & CEO, Canva", country: AU, agent: 6,
+   archetypes: [FOUNDER_OPERATOR], domains: [CONSUMER_INTERNET, AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 2, early_stage: 2, network: 4, capital: 5, independence: 5},
+   rationale: "Built a major design platform outside the US venture system; useful for geographic independence testing."}
+- {key: mike_cannon_brookes, name: Mike Cannon-Brookes, affiliation: "Co-founder & CEO, Atlassian; founder of Grok Ventures", country: AU, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [ENERGY_CLIMATE, AI_SOFTWARE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Engineer-founder deploying family-office capital into Australian energy transition; strongly independent of Silicon Valley."}
+- {key: scott_farquhar, name: Scott Farquhar, affiliation: "Co-founder of Atlassian; co-founder of Skip Capital", country: AU, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, ENERGY_CLIMATE], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 5},
+   rationale: "Atlassian co-founder investing through a named family vehicle; correlated with Cannon-Brookes, a clean co-founder independence test."}
+- {key: dustin_moskovitz, name: Dustin Moskovitz, affiliation: "Co-founder & CEO of Asana; co-founder of Facebook and Good Ventures", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 4, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Facebook co-founder whose philanthropic vehicle funded AI-safety work years before it was mainstream; philanthropy must stay separate from equity."}
+- {key: sean_parker, name: Sean Parker, affiliation: "Founder of Napster; founding President of Facebook; founder of the Parker Institute for Cancer Immunotherapy", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [BIOTECH_LIFESCIENCES, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 3, early_stage: 4, network: 5, capital: 5, independence: 4},
+   rationale: "Consumer-internet operator who then built a major cancer-immunotherapy research vehicle; genuine cross-domain exposure."}
+- {key: anne_wojcicki, name: Anne Wojcicki, affiliation: "Co-founder & CEO, 23andMe", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR], domains: [BIOTECH_LIFESCIENCES, HEALTHCARE_SERVICES], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 3, early_stage: 3, network: 5, capital: 3, independence: 4},
+   rationale: "Consumer-genomics founder whose company's collapse makes her a valuable negative-control node in the graph."}
+- {key: laurene_powell_jobs, name: Laurene Powell Jobs, affiliation: "Founder & President, Emerson Collective", country: US, agent: 6,
+   archetypes: [FAMILY_OFFICE_PRINCIPAL], domains: [ENERGY_CLIMATE, HEALTHCARE_SERVICES, CONSUMER_INTERNET], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 2, early_stage: 3, network: 5, capital: 5, independence: 5},
+   rationale: "Deploys a hybrid philanthropic-investment vehicle across climate and media; philanthropy and equity must be recorded separately."}
+- {key: ken_griffin, name: Kenneth Griffin, affiliation: "Founder & CEO, Citadel", country: US, agent: 6,
+   archetypes: [PROFESSIONAL_INVESTOR, FAMILY_OFFICE_PRINCIPAL], domains: [FINTECH, AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 3, early_stage: 2, network: 4, capital: 5, independence: 5},
+   rationale: "Dominant market-maker and hedge fund; 13F visibility is high but private early-stage exposure is limited and hard to attribute personally."}
+- {key: steve_cohen, name: Steven Cohen, affiliation: "Founder, Point72 Asset Management; Point72 Ventures", country: US, agent: 6,
+   archetypes: [PROFESSIONAL_INVESTOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, FINTECH, BIOTECH_LIFESCIENCES], signal_class: EXTENDED_SIGNAL,
+   scores: {access: 4, technical: 2, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Runs a hedge fund with a dedicated venture arm; fund vs personal attribution is the key discipline for this node."}
+- {key: stanley_druckenmiller, name: Stanley Druckenmiller, affiliation: "Chairman & CEO, Duquesne Family Office", country: US, agent: 6,
+   archetypes: [PROFESSIONAL_INVESTOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, SEMICONDUCTORS], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 2, early_stage: 1, network: 3, capital: 5, independence: 5},
+   rationale: "Exceptional macro record with fully filing-visible public positions; near-zero private early-stage exposure, a useful visibility contrast."}
+- {key: chamath_palihapitiya, name: Chamath Palihapitiya, affiliation: "Founder & CEO, Social Capital", country: US, agent: 6,
+   archetypes: [PROFESSIONAL_INVESTOR, FAMILY_OFFICE_PRINCIPAL], domains: [AI_SOFTWARE, ENERGY_CLIMATE, SPACE], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 3, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Early Facebook executive turned investor; the SPAC vintage makes him an important negative-control and hype-cycle node."}
+- {key: mark_cuban, name: Mark Cuban, affiliation: "Investor; founder of Cost Plus Drugs; former owner of the Dallas Mavericks", country: US, agent: 6,
+   archetypes: [SUPER_ANGEL, FOUNDER_OPERATOR], domains: [HEALTHCARE_SERVICES, CONSUMER_INTERNET], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 2, early_stage: 3, network: 3, capital: 5, independence: 4},
+   rationale: "Very broad and publicly documented angel book of mostly consumer businesses; low frontier-technology density."}
+- {key: eric_yuan, name: Eric Yuan, affiliation: "Founder & CEO, Zoom", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR], domains: [AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 3, technical: 4, early_stage: 2, network: 3, capital: 5, independence: 4},
+   rationale: "Engineer-founder with substantial capital but a low public private-investment profile; a reconstructability test case."}
+- {key: travis_kalanick, name: Travis Kalanick, affiliation: "Co-founder of Uber; CEO of CloudKitchens", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [ROBOTICS, CONSUMER_INTERNET, AI_SOFTWARE], signal_class: WATCHLIST,
+   scores: {access: 4, technical: 3, early_stage: 3, network: 4, capital: 5, independence: 4},
+   rationale: "Marketplace founder now in automated food infrastructure; deliberately opaque vehicles limit reconstructability."}
+- {key: jan_koum, name: Jan Koum, affiliation: "Co-founder of WhatsApp", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [CONSUMER_INTERNET, CRYPTO], signal_class: LOW_SIGNAL_OR_POOR_VISIBILITY,
+   scores: {access: 3, technical: 4, early_stage: 2, network: 3, capital: 5, independence: 4},
+   rationale: "Very large capital base with an almost entirely private posture; included explicitly to quantify the visibility floor."}
+- {key: brian_acton, name: Brian Acton, affiliation: "Co-founder of WhatsApp; Executive Chairman, Signal Foundation", country: US, agent: 6,
+   archetypes: [FOUNDER_OPERATOR, FAMILY_OFFICE_PRINCIPAL], domains: [CONSUMER_INTERNET], signal_class: LOW_SIGNAL_OR_POOR_VISIBILITY,
+   scores: {access: 3, technical: 4, early_stage: 2, network: 3, capital: 5, independence: 4},
+   rationale: "Funded Signal directly; otherwise a low-visibility node useful for calibrating what the graph cannot see."}

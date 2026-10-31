@@ -1,0 +1,418 @@
+# Curated company entity-resolution overrides.
+# `merges`: raw strings that must resolve to one canonical entity.
+# `do_not_merge`: name groups that normalisation might collapse but must not be.
+# `basis`: what established the identity -- edge evidence read on both sides,
+#          never name similarity alone.
+# Every entry is a naming/corporate-structure fact, not an investment claim.
+merges:
+- canonical_name: OpenAI
+  aliases:
+  - Open AI
+  - OpenAI Global LLC
+  - OpenAI Group PBC
+  - OpenAI Inc
+  - OpenAI L.P.
+  - OpenAI LP
+  - OpenAI OpCo
+  - OpenAI, Inc.
+- canonical_name: Anthropic
+  aliases:
+  - Anthropic PBC
+  - Anthropic, PBC
+- canonical_name: SpaceX
+  aliases:
+  - Space Exploration Technologies
+  - Space Exploration Technologies Corp
+  - Space Exploration Technologies Corp.
+  - SpaceX Corp
+- canonical_name: Meta Platforms
+  aliases:
+  - Facebook
+  - Facebook Inc
+  - Facebook, Inc.
+  - Meta
+  - Meta Platforms Inc
+- canonical_name: Alphabet
+  aliases:
+  - Alphabet Inc
+  - Google Inc
+  - Google LLC
+- canonical_name: Google DeepMind
+  aliases:
+  - DeepMind
+  - DeepMind Technologies
+  - DeepMind Technologies Limited
+  parent_company: Alphabet
+- canonical_name: X (formerly Twitter)
+  aliases:
+  - Twitter
+  - Twitter Inc
+  - X Corp
+  - X Corp.
+- canonical_name: Anduril Industries
+  aliases:
+  - Anduril
+- canonical_name: Commonwealth Fusion Systems
+  aliases:
+  - CFS
+  - Commonwealth Fusion
+  - Commonwealth Fusion Systems (CFS)
+  basis: Parenthetical initialism of the same name.
+- canonical_name: Scale AI
+  aliases:
+  - Scale
+  - Scale AI Inc
+  - Scale AI, Inc.
+- canonical_name: Databricks
+  aliases:
+  - Databricks Inc
+  - Databricks, Inc.
+- canonical_name: Stripe
+  aliases:
+  - Stripe Inc
+  - Stripe, Inc.
+- canonical_name: Neuralink
+  aliases:
+  - Neuralink Corp
+  - Neuralink Corporation
+- canonical_name: xAI
+  aliases:
+  - X.AI
+  - X.AI Corp
+  - X.AI LLC
+  - xAI Corp
+- canonical_name: Safe Superintelligence
+  aliases:
+  - SSI
+  - Safe Superintelligence Inc
+  - Safe Superintelligence Inc.
+- canonical_name: Nvidia
+  aliases:
+  - NVIDIA
+  - NVIDIA Corporation
+  - Nvidia Corp
+- canonical_name: Heirloom
+  aliases:
+  - Heirloom Carbon
+  - Heirloom Carbon Technologies
+  basis: Both sides describe the same direct-air-capture company (BEV portfolio; Incite case study).
+- canonical_name: Antora Energy
+  aliases:
+  - Antora
+  basis: Lowercarbon's 'Antora' and BEV's 'Antora Energy' are both the thermal-battery company.
+- canonical_name: Lilac Solutions
+  aliases:
+  - Lilac
+  basis: Lowercarbon's 'Lilac' and BEV's 'Lilac Solutions' are both the lithium-extraction company.
+- canonical_name: Impulse Space
+  aliases:
+  - Impulse
+  basis: Founders Fund's 'Impulse' and Lux's 'Impulse Space' are the same in-space logistics company.
+- canonical_name: Loam Bio
+  aliases:
+  - Loam
+  basis: Lowercarbon's 'Loam' and Grok Ventures' 'Loam Bio' are the same soil-carbon company.
+- canonical_name: Heart Aerospace
+  aliases:
+  - Heart
+  basis: Lowercarbon's 'Heart' and BEV's 'Heart Aerospace' are the same electric-aviation company; both
+    sides are climate portfolios.
+- canonical_name: Brimstone
+  aliases:
+  - Brimstone Energy
+  basis: DCVC's 'Brimstone' and BEV's 'Brimstone Energy' are the same low-carbon cement company.
+- canonical_name: Together AI
+  aliases:
+  - Together
+  basis: Lux's 'Together' and SV Angel's 'Together AI' are the same AI-compute company.
+- canonical_name: Inflection AI
+  aliases:
+  - Inflection
+  basis: Greylock's 'Inflection' is the company Suleyman and Hoffman co-founded, announced on Greylock's
+    own site.
+- canonical_name: Eikon Therapeutics
+  aliases:
+  - Eikon
+  basis: Both attributed to the same Lux partner on Lux's own pages.
+- canonical_name: Editas Medicine
+  aliases:
+  - Editas
+  basis: Church's and Liu's own disclosure pages refer to the same gene-editing company.
+- canonical_name: Valar Atomics
+  aliases:
+  - Valar Atomic
+  basis: Singular/plural variant of the same nuclear company.
+- canonical_name: Factory AI
+  aliases:
+  - Factory
+  basis: Khosla/Sequoia/SV Angel 'Factory' and QuantumLight's 'Factory AI' are the same AI coding-agent
+    company.
+- canonical_name: Planet Labs
+  aliases:
+  - Planet
+  - Planet Labs PBC
+  basis: Future Ventures' and Innovation Endeavors' 'Planet' is Planet Labs, where Will Marshall holds
+    founder equity per the SEC proxy.
+- canonical_name: Radiant Industries
+  aliases:
+  - Radiant
+  - Radiant Nuclear
+  basis: a16z's 'Radiant Industries' ('Radiant builds 1 MW portable nuclear'), Felicis' 'Radiant Nuclear'
+    and the bare 'Radiant' on USV's and DCVC's pages are the same portable-microreactor company. Previously
+    held apart pending evidence; resolved by the verification workstream.
+- canonical_name: Oculus VR
+  aliases:
+  - Oculus
+  basis: Same company; Luckey's founding entity.
+- canonical_name: Scholar Rock
+  aliases:
+  - SCHOLAR ROCK HLDG CORP
+  - Scholar Rock Holding Corporation
+  basis: SEC filing capitalisation of the same issuer.
+- canonical_name: eGenesis
+  aliases:
+  - Egenesis Bio
+  - eGenesis Bio
+  basis: Same xenotransplantation company; casing/suffix variant.
+- canonical_name: Uber Freight
+  aliases: []
+  parent_company: Uber
+  basis: Distinct financing entity from Uber itself -- kept SEPARATE, with the parent recorded, so the
+    two are never double-counted as one.
+- canonical_name: Sublime Systems
+  aliases:
+  - Sublime
+  basis: Same low-carbon cement company seen through two funds' portfolio pages (workstream 2).
+- canonical_name: Zap Energy
+  aliases:
+  - Zap
+  basis: Same sheared-flow Z-pinch fusion company seen through two funds' pages (workstream 2).
+- canonical_name: Anchorage Digital
+  aliases:
+  - Anchorage
+  basis: Rabois' 'Anchorage' at Series A and SV Angel's 'Anchorage Digital' are the same crypto-custody
+    company.
+- canonical_name: Cellino Biotech
+  aliases:
+  - Cellino
+  basis: Khosla's 'Cellino' and Church's 'Cellino Biotech' are the same autologous stem-cell company.
+- canonical_name: Character.AI
+  aliases:
+  - Character
+  basis: Both entries come from AI angel lists (Gil, Gross) and refer to the same conversational-AI company.
+- canonical_name: Harmonic
+  aliases:
+  - Harmonic AI
+  basis: Sequoia's 'Harmonic' and Floodgate's 'Harmonic AI' are the same mathematical-reasoning company.
+- canonical_name: Arrived Homes
+  aliases:
+  - Arrived
+  basis: Bezos Expeditions' 'Arrived' and the Partovi list's 'Arrived Homes' are the same fractional-real-estate
+    company.
+- canonical_name: Aurora Innovation
+  aliases:
+  - Aurora
+  basis: Greylock's 'Aurora' is Aurora Innovation, where the SEC proxy names Urmson co-founder and CEO.
+- canonical_name: Fuse Energy
+  aliases:
+  - Fuse
+  basis: Lowercarbon's 'Fuse' and QuantumLight's 'Fuse Energy' are both the energy company; both listings
+    sit in energy portfolios.
+- canonical_name: Varda Space Industries
+  aliases:
+  - Varda
+  - Varda Space
+  basis: Khosla's 'Varda' and Hsu's 'Varda Space' are the in-space pharmaceutical-manufacturing company.
+- canonical_name: Amazon
+  aliases:
+  - Amazon Com Inc
+  - Amazon.com
+  - Amazon.com, Inc.
+  basis: SEC filing form of the same issuer.
+- canonical_name: Navan
+  aliases:
+  - Navan (formerly TripActions)
+  - TripActions
+  basis: Renamed from TripActions; same company.
+- canonical_name: Unity Software
+  aliases:
+  - Unity Technologies
+  basis: Unity Technologies is the pre-IPO name of Unity Software Inc.
+- canonical_name: Flare
+  aliases:
+  - Flare (aka Marble)
+  basis: Same company under its alternate name, as the source itself states.
+- canonical_name: Prime Medicine
+  aliases:
+  - Prime Medicine, Inc.
+  basis: Legal-suffix variant of the same issuer.
+- canonical_name: Beam Therapeutics
+  aliases:
+  - Beam Therapeutics Inc.
+  - Beam Therapeutics, Inc.
+  basis: Legal-suffix variant of the same issuer.
+do_not_merge:
+- names:
+  - Vicarious
+  - Vicarious Surgical Inc.
+  - Vicarious Surgical
+- names:
+  - Arbor
+  - Arbor Biotechnologies
+  - Arbor Energy
+- names:
+  - Terra
+  - TerraCO2
+- names:
+  - Stand
+  - Standard AI
+- names:
+  - Circ
+  - Circles
+  - Circle Medical
+- names:
+  - Block
+  - Blockaid
+- names:
+  - Brilliant Labs
+  - Brilliant Planet
+- names:
+  - Ghost
+  - GhostFire
+- names:
+  - Reactive Technologies
+  - Reactive Biosciences
+- names:
+  - World Labs
+  - Worldsensing
+- names:
+  - NEAR
+  - Neara
+- names:
+  - Zoom
+  - Zoomo
+- names:
+  - Planet Labs
+  - Planetary Resources
+- names:
+  - River
+  - Riverside.fm
+- names:
+  - Brain Co
+  - Braintrust
+- names:
+  - Nova Labs
+  - Novalith
+- names:
+  - Snap
+  - Snapvine
+- names:
+  - Uber
+  - Uber Freight
+- names:
+  - Anthropic
+  - Anthro Labs
+- names:
+  - Scale AI
+  - Scale Computing
+- names:
+  - Figure
+  - Figma
+- names:
+  - Helion Energy
+  - Helios
+- names:
+  - Applied Intuition
+  - Applied Materials
+- names:
+  - OpenAI
+  - Open Philanthropy
+- names:
+  - Google DeepMind
+  - Alphabet
+- names:
+  - Odyssey
+  - Odyssey Therapeutics
+  - ODYSSEY THERAPEUTICS INC
+- names:
+  - Paradigm
+  - Paradigm Health
+- names:
+  - Arrived Homes
+  - Arrived-AI
+- names:
+  - Ivanhoe Capital Corporation
+  - Ivanhoe Capital Acquisition Corp.
+- names:
+  - Anchorage Digital
+  - Anchorage Capital
+- names:
+  - Pendulum
+  - Pendulum Therapeutics
+- names:
+  - Matter
+  - Matter Neuroscience
+- names:
+  - FieldAI
+  - Fieldin
+- names:
+  - Convoy
+  - Convox
+- names:
+  - FormBio
+  - Formo
+- names:
+  - Brighte
+  - Brightseed
+- names:
+  - Thinkful
+  - Thinkfuse
+- names:
+  - Illumina
+  - Illumio
+- names:
+  - Citadel
+  - Citadel Securities
+- names:
+  - Hippo
+  - Hippocratic AI
+- names:
+  - Anchor
+  - Anchorage Digital
+- names:
+  - Revolut
+  - REVOLUTION MEDICINES INC
+  - Revolution Medicines
+- names:
+  - Human
+  - Humane Genomics
+- names:
+  - Sola
+  - Solar Square
+- names:
+  - Stand
+  - STANDARD BIOTOOLS INC
+- names:
+  - EVERY
+  - EveryONE Medicines
+- names:
+  - Found
+  - Foundation Medicine, Inc.
+- names:
+  - Unity Software
+  - Unity Biotechnology
+- names:
+  - Bridge
+  - Bridge International Academies / New Globe Schools
+- names:
+  - Mill
+  - Millennium Pharmaceuticals
+- names:
+  - Lowercarbon Capital
+  - Lowercase Capital
+- names:
+  - Terrain Biosciences
+  - Terrana Biosciences
+- names:
+  - Brilliant
+  - Brilliant Labs

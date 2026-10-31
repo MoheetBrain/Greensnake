@@ -1,0 +1,301 @@
+obs_id,company,as_of_date,valuation_usd,elite_people_count,people_list,outcome_label,notes
+c_23andme__2016-01,23andMe,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_23andme__2018-01,23andMe,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_23andme__2020-01,23andMe,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_23andme__2022-01,23andMe,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_23andme__2024-01,23andMe,2024-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_23andme__2026-01,23andMe,2026-01,305000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_anduril_industries__2016-01,Anduril Industries,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.143
+c_anduril_industries__2018-01,Anduril Industries,2018-01,,0,[],WINNER,as_invested=2; hindsight_gap=2; temporal_coverage=0.143
+c_anduril_industries__2020-01,Anduril Industries,2020-01,,0,[],WINNER,as_invested=2; hindsight_gap=2; temporal_coverage=0.143
+c_anduril_industries__2022-01,Anduril Industries,2022-01,,0,[],WINNER,as_invested=2; hindsight_gap=2; temporal_coverage=0.143
+c_anduril_industries__2024-01,Anduril Industries,2024-01,,0,[],WINNER,as_invested=2; hindsight_gap=2; temporal_coverage=0.143
+c_anduril_industries__2026-01,Anduril Industries,2026-01,,0,[],WINNER,as_invested=2; hindsight_gap=2; temporal_coverage=0.143
+c_anthropic__2016-01,Anthropic,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.375
+c_anthropic__2018-01,Anthropic,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.375
+c_anthropic__2020-01,Anthropic,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.375
+c_anthropic__2022-01,Anthropic,2022-01,,3,"[{""person_key"": ""daniela_amodei"", ""name"": ""Daniela Amodei"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2021-05-28""}, {""person_key"": ""dario_amodei"", ""name"": ""Dario Amodei"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2021-05-28""}, {""person_key"": ""eric_schmidt"", ""name"": ""Eric Schmidt"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2021-05"", ""first_public_source_date"": ""2021-05-28""}]",WINNER,as_invested=3; hindsight_gap=0; temporal_coverage=0.375
+c_anthropic__2024-01,Anthropic,2024-01,,3,"[{""person_key"": ""daniela_amodei"", ""name"": ""Daniela Amodei"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2021-05-28""}, {""person_key"": ""dario_amodei"", ""name"": ""Dario Amodei"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2021-05-28""}, {""person_key"": ""eric_schmidt"", ""name"": ""Eric Schmidt"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2021-05"", ""first_public_source_date"": ""2021-05-28""}]",WINNER,as_invested=3; hindsight_gap=0; temporal_coverage=0.375
+c_anthropic__2026-01,Anthropic,2026-01,,3,"[{""person_key"": ""daniela_amodei"", ""name"": ""Daniela Amodei"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2021-05-28""}, {""person_key"": ""dario_amodei"", ""name"": ""Dario Amodei"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2021-05-28""}, {""person_key"": ""eric_schmidt"", ""name"": ""Eric Schmidt"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2021-05"", ""first_public_source_date"": ""2021-05-28""}]",WINNER,as_invested=3; hindsight_gap=0; temporal_coverage=0.375
+c_argo_ai__2016-01,Argo AI,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_argo_ai__2018-01,Argo AI,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_argo_ai__2020-01,Argo AI,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_argo_ai__2022-01,Argo AI,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_argo_ai__2024-01,Argo AI,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_argo_ai__2026-01,Argo AI,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_better_place__2016-01,Better Place,2016-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_better_place__2018-01,Better Place,2018-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_better_place__2020-01,Better Place,2020-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_better_place__2022-01,Better Place,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_better_place__2024-01,Better Place,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_better_place__2026-01,Better Place,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_bird__2016-01,Bird,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_bird__2018-01,Bird,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_bird__2020-01,Bird,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_bird__2022-01,Bird,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_bird__2024-01,Bird,2024-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_bird__2026-01,Bird,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_bloom_energy__2016-01,Bloom Energy,2016-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=1.0
+c_bloom_energy__2018-01,Bloom Energy,2018-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=1.0
+c_bloom_energy__2020-01,Bloom Energy,2020-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=1.0
+c_bloom_energy__2022-01,Bloom Energy,2022-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=1.0
+c_bloom_energy__2024-01,Bloom Energy,2024-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=1.0
+c_bloom_energy__2026-01,Bloom Energy,2026-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=1.0
+c_blue_apron__2016-01,Blue Apron,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_blue_apron__2018-01,Blue Apron,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_blue_apron__2020-01,Blue Apron,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_blue_apron__2022-01,Blue Apron,2022-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_blue_apron__2024-01,Blue Apron,2024-01,103000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_blue_apron__2026-01,Blue Apron,2026-01,103000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_britishvolt__2016-01,Britishvolt,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_britishvolt__2018-01,Britishvolt,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_britishvolt__2020-01,Britishvolt,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_britishvolt__2022-01,Britishvolt,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_britishvolt__2024-01,Britishvolt,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_britishvolt__2026-01,Britishvolt,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_canva__2016-01,Canva,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_canva__2018-01,Canva,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_canva__2020-01,Canva,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_canva__2022-01,Canva,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_canva__2024-01,Canva,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_canva__2026-01,Canva,2026-01,42000000000.0,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_casper__2016-01,Casper,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_casper__2018-01,Casper,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_casper__2020-01,Casper,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_casper__2022-01,Casper,2022-01,286000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_casper__2024-01,Casper,2024-01,286000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_casper__2026-01,Casper,2026-01,286000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_character_ai__2016-01,Character.AI,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.5
+c_character_ai__2018-01,Character.AI,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.5
+c_character_ai__2020-01,Character.AI,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.5
+c_character_ai__2022-01,Character.AI,2022-01,,0,[],MEDIOCRE,as_invested=1; hindsight_gap=1; temporal_coverage=0.5
+c_character_ai__2024-01,Character.AI,2024-01,1000000000.0,2,"[{""person_key"": ""noam_shazeer"", ""name"": ""Noam Shazeer"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2022-12-05""}, {""person_key"": ""nat_friedman"", ""name"": ""Nat Friedman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PERSONAL_ANGEL_INVESTMENT"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2023-03"", ""first_public_source_date"": ""2023-03-23""}]",MEDIOCRE,as_invested=2; hindsight_gap=0; temporal_coverage=0.5
+c_character_ai__2026-01,Character.AI,2026-01,2700000000.0,2,"[{""person_key"": ""noam_shazeer"", ""name"": ""Noam Shazeer"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2021"", ""first_public_source_date"": ""2022-12-05""}, {""person_key"": ""nat_friedman"", ""name"": ""Nat Friedman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PERSONAL_ANGEL_INVESTMENT"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2023-03"", ""first_public_source_date"": ""2023-03-23""}]",MEDIOCRE,as_invested=2; hindsight_gap=0; temporal_coverage=0.5
+c_clover_health__2016-01,Clover Health,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_clover_health__2018-01,Clover Health,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_clover_health__2020-01,Clover Health,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_clover_health__2022-01,Clover Health,2022-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_clover_health__2024-01,Clover Health,2024-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_clover_health__2026-01,Clover Health,2026-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_commonwealth_fusion__2016-01,Commonwealth Fusion Systems,2016-01,,0,[],STRONG,as_invested=0; hindsight_gap=0; temporal_coverage=0.2
+c_commonwealth_fusion__2018-01,Commonwealth Fusion Systems,2018-01,,0,[],STRONG,as_invested=2; hindsight_gap=2; temporal_coverage=0.2
+c_commonwealth_fusion__2020-01,Commonwealth Fusion Systems,2020-01,,0,[],STRONG,as_invested=2; hindsight_gap=2; temporal_coverage=0.2
+c_commonwealth_fusion__2022-01,Commonwealth Fusion Systems,2022-01,,0,[],STRONG,as_invested=2; hindsight_gap=2; temporal_coverage=0.2
+c_commonwealth_fusion__2024-01,Commonwealth Fusion Systems,2024-01,,0,[],STRONG,as_invested=2; hindsight_gap=2; temporal_coverage=0.2
+c_commonwealth_fusion__2026-01,Commonwealth Fusion Systems,2026-01,,1,"[{""person_key"": ""bob_mumgaard"", ""name"": ""Bob Mumgaard"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2018"", ""first_public_source_date"": ""2025-09-18""}]",STRONG,as_invested=2; hindsight_gap=1; temporal_coverage=0.2
+c_convoy__2016-01,Convoy,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_convoy__2018-01,Convoy,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_convoy__2020-01,Convoy,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_convoy__2022-01,Convoy,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_convoy__2024-01,Convoy,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_convoy__2026-01,Convoy,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_databricks__2016-01,Databricks,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_databricks__2018-01,Databricks,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_databricks__2020-01,Databricks,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_databricks__2022-01,Databricks,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_databricks__2024-01,Databricks,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_databricks__2026-01,Databricks,2026-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_essential_products__2016-01,Essential Products,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_essential_products__2018-01,Essential Products,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_essential_products__2020-01,Essential Products,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_essential_products__2022-01,Essential Products,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_essential_products__2024-01,Essential Products,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_essential_products__2026-01,Essential Products,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_ftx__2016-01,FTX,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_ftx__2018-01,FTX,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_ftx__2020-01,FTX,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_ftx__2022-01,FTX,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_ftx__2024-01,FTX,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_ftx__2026-01,FTX,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_fast__2016-01,Fast,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_fast__2018-01,Fast,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_fast__2020-01,Fast,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_fast__2022-01,Fast,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_fast__2024-01,Fast,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_fast__2026-01,Fast,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_figma__2016-01,Figma,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_figma__2018-01,Figma,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_figma__2020-01,Figma,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_figma__2022-01,Figma,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_figma__2024-01,Figma,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_figma__2026-01,Figma,2026-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_google_deepmind__2016-01,Google DeepMind,2016-01,650000000.0,0,[],WINNER,as_invested=3; hindsight_gap=3; temporal_coverage=0.6
+c_google_deepmind__2018-01,Google DeepMind,2018-01,650000000.0,0,[],WINNER,as_invested=3; hindsight_gap=3; temporal_coverage=0.6
+c_google_deepmind__2020-01,Google DeepMind,2020-01,650000000.0,0,[],WINNER,as_invested=3; hindsight_gap=3; temporal_coverage=0.6
+c_google_deepmind__2022-01,Google DeepMind,2022-01,650000000.0,1,"[{""person_key"": ""li_ka_shing"", ""name"": ""Li Ka-shing"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2012"", ""first_public_source_date"": ""2020-11-22""}]",WINNER,as_invested=3; hindsight_gap=2; temporal_coverage=0.6
+c_google_deepmind__2024-01,Google DeepMind,2024-01,650000000.0,2,"[{""person_key"": ""mustafa_suleyman"", ""name"": ""Mustafa Suleyman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2010"", ""first_public_source_date"": ""2022-03-08""}, {""person_key"": ""li_ka_shing"", ""name"": ""Li Ka-shing"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2012"", ""first_public_source_date"": ""2020-11-22""}]",WINNER,as_invested=3; hindsight_gap=1; temporal_coverage=0.6
+c_google_deepmind__2026-01,Google DeepMind,2026-01,650000000.0,2,"[{""person_key"": ""mustafa_suleyman"", ""name"": ""Mustafa Suleyman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2010"", ""first_public_source_date"": ""2022-03-08""}, {""person_key"": ""li_ka_shing"", ""name"": ""Li Ka-shing"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2012"", ""first_public_source_date"": ""2020-11-22""}]",WINNER,as_invested=3; hindsight_gap=1; temporal_coverage=0.6
+c_inflection_ai__2016-01,Inflection AI,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.667
+c_inflection_ai__2018-01,Inflection AI,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.667
+c_inflection_ai__2020-01,Inflection AI,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.667
+c_inflection_ai__2022-01,Inflection AI,2022-01,,1,"[{""person_key"": ""li_ka_shing"", ""name"": ""Li Ka-shing"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2022"", ""first_public_source_date"": ""2020-11-22""}]",MEDIOCRE,as_invested=1; hindsight_gap=0; temporal_coverage=0.667
+c_inflection_ai__2024-01,Inflection AI,2024-01,,2,"[{""person_key"": ""li_ka_shing"", ""name"": ""Li Ka-shing"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2022"", ""first_public_source_date"": ""2020-11-22""}, {""person_key"": ""mustafa_suleyman"", ""name"": ""Mustafa Suleyman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2022-03"", ""first_public_source_date"": ""2022-03-08""}]",MEDIOCRE,as_invested=2; hindsight_gap=0; temporal_coverage=0.667
+c_inflection_ai__2026-01,Inflection AI,2026-01,650000000.0,2,"[{""person_key"": ""li_ka_shing"", ""name"": ""Li Ka-shing"", ""signal_class"": ""EXTENDED_SIGNAL"", ""relationship_type"": ""FAMILY_OFFICE_INVESTMENT"", ""overlap_class"": ""BROAD"", ""investment_date"": ""2022"", ""first_public_source_date"": ""2020-11-22""}, {""person_key"": ""mustafa_suleyman"", ""name"": ""Mustafa Suleyman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""FOUNDER_EQUITY"", ""overlap_class"": ""STRICT"", ""investment_date"": ""2022-03"", ""first_public_source_date"": ""2022-03-08""}]",MEDIOCRE,as_invested=2; hindsight_gap=0; temporal_coverage=0.667
+c_juicero__2016-01,Juicero,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_juicero__2018-01,Juicero,2018-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_juicero__2020-01,Juicero,2020-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_juicero__2022-01,Juicero,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_juicero__2024-01,Juicero,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_juicero__2026-01,Juicero,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_katerra__2016-01,Katerra,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_katerra__2018-01,Katerra,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_katerra__2020-01,Katerra,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_katerra__2022-01,Katerra,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_katerra__2024-01,Katerra,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_katerra__2026-01,Katerra,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_lordstown_motors__2016-01,Lordstown Motors,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_lordstown_motors__2018-01,Lordstown Motors,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_lordstown_motors__2020-01,Lordstown Motors,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_lordstown_motors__2022-01,Lordstown Motors,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_lordstown_motors__2024-01,Lordstown Motors,2024-01,10200000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_lordstown_motors__2026-01,Lordstown Motors,2026-01,10200000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_magic_leap__2016-01,Magic Leap,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_magic_leap__2018-01,Magic Leap,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_magic_leap__2020-01,Magic Leap,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_magic_leap__2022-01,Magic Leap,2022-01,450000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_magic_leap__2024-01,Magic Leap,2024-01,450000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_magic_leap__2026-01,Magic Leap,2026-01,450000000.0,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_nikola__2016-01,Nikola,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_nikola__2018-01,Nikola,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_nikola__2020-01,Nikola,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_nikola__2022-01,Nikola,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_nikola__2024-01,Nikola,2024-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_nikola__2026-01,Nikola,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_nubank__2016-01,Nubank,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_nubank__2018-01,Nubank,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_nubank__2020-01,Nubank,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_nubank__2022-01,Nubank,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_nubank__2024-01,Nubank,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_nubank__2026-01,Nubank,2026-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_olive__2016-01,Olive AI,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_olive__2018-01,Olive AI,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_olive__2020-01,Olive AI,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_olive__2022-01,Olive AI,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_olive__2024-01,Olive AI,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_olive__2026-01,Olive AI,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_openai__2016-01,OpenAI,2016-01,,8,"[{""person_key"": ""andrej_karpathy"", ""name"": ""Andrej Karpathy"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""elon_musk"", ""name"": ""Elon Musk"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""greg_brockman"", ""name"": ""Greg Brockman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""ilya_sutskever"", ""name"": ""Ilya Sutskever"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""john_schulman"", ""name"": ""John Schulman"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""peter_thiel"", ""name"": ""Peter Thiel"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""sam_altman"", ""name"": ""Sam Altman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""yoshua_bengio"", ""name"": ""Yoshua Bengio"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""ADVISOR_ONLY"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}]",WINNER,as_invested=8; hindsight_gap=0; temporal_coverage=0.667
+c_openai__2018-01,OpenAI,2018-01,,8,"[{""person_key"": ""andrej_karpathy"", ""name"": ""Andrej Karpathy"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""elon_musk"", ""name"": ""Elon Musk"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""greg_brockman"", ""name"": ""Greg Brockman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""ilya_sutskever"", ""name"": ""Ilya Sutskever"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""john_schulman"", ""name"": ""John Schulman"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""peter_thiel"", ""name"": ""Peter Thiel"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""sam_altman"", ""name"": ""Sam Altman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""yoshua_bengio"", ""name"": ""Yoshua Bengio"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""ADVISOR_ONLY"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}]",WINNER,as_invested=8; hindsight_gap=0; temporal_coverage=0.667
+c_openai__2020-01,OpenAI,2020-01,,8,"[{""person_key"": ""andrej_karpathy"", ""name"": ""Andrej Karpathy"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""elon_musk"", ""name"": ""Elon Musk"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""greg_brockman"", ""name"": ""Greg Brockman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""ilya_sutskever"", ""name"": ""Ilya Sutskever"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""john_schulman"", ""name"": ""John Schulman"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""peter_thiel"", ""name"": ""Peter Thiel"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""sam_altman"", ""name"": ""Sam Altman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""yoshua_bengio"", ""name"": ""Yoshua Bengio"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""ADVISOR_ONLY"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}]",WINNER,as_invested=8; hindsight_gap=0; temporal_coverage=0.667
+c_openai__2022-01,OpenAI,2022-01,,8,"[{""person_key"": ""andrej_karpathy"", ""name"": ""Andrej Karpathy"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""elon_musk"", ""name"": ""Elon Musk"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""greg_brockman"", ""name"": ""Greg Brockman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""ilya_sutskever"", ""name"": ""Ilya Sutskever"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""john_schulman"", ""name"": ""John Schulman"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""peter_thiel"", ""name"": ""Peter Thiel"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""sam_altman"", ""name"": ""Sam Altman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""yoshua_bengio"", ""name"": ""Yoshua Bengio"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""ADVISOR_ONLY"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}]",WINNER,as_invested=8; hindsight_gap=0; temporal_coverage=0.667
+c_openai__2024-01,OpenAI,2024-01,,8,"[{""person_key"": ""andrej_karpathy"", ""name"": ""Andrej Karpathy"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""elon_musk"", ""name"": ""Elon Musk"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""greg_brockman"", ""name"": ""Greg Brockman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""ilya_sutskever"", ""name"": ""Ilya Sutskever"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""john_schulman"", ""name"": ""John Schulman"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""peter_thiel"", ""name"": ""Peter Thiel"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""sam_altman"", ""name"": ""Sam Altman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""yoshua_bengio"", ""name"": ""Yoshua Bengio"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""ADVISOR_ONLY"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}]",WINNER,as_invested=8; hindsight_gap=0; temporal_coverage=0.667
+c_openai__2026-01,OpenAI,2026-01,,8,"[{""person_key"": ""andrej_karpathy"", ""name"": ""Andrej Karpathy"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""elon_musk"", ""name"": ""Elon Musk"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""greg_brockman"", ""name"": ""Greg Brockman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""ilya_sutskever"", ""name"": ""Ilya Sutskever"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""john_schulman"", ""name"": ""John Schulman"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""peter_thiel"", ""name"": ""Peter Thiel"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""PHILANTHROPIC_FUNDING"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""sam_altman"", ""name"": ""Sam Altman"", ""signal_class"": ""CORE_HIGH_SIGNAL"", ""relationship_type"": ""OTHER_VERIFIED"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}, {""person_key"": ""yoshua_bengio"", ""name"": ""Yoshua Bengio"", ""signal_class"": ""DOMAIN_SPECIALIST"", ""relationship_type"": ""ADVISOR_ONLY"", ""overlap_class"": ""INFO_NETWORK"", ""investment_date"": ""2015-12"", ""first_public_source_date"": ""2015-12-11""}]",WINNER,as_invested=8; hindsight_gap=0; temporal_coverage=0.667
+c_opendoor__2016-01,Opendoor,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_opendoor__2018-01,Opendoor,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_opendoor__2020-01,Opendoor,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_opendoor__2022-01,Opendoor,2022-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_opendoor__2024-01,Opendoor,2024-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_opendoor__2026-01,Opendoor,2026-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_palantir__2016-01,Palantir Technologies,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_palantir__2018-01,Palantir Technologies,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_palantir__2020-01,Palantir Technologies,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_palantir__2022-01,Palantir Technologies,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_palantir__2024-01,Palantir Technologies,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_palantir__2026-01,Palantir Technologies,2026-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_pebble__2016-01,Pebble,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_pebble__2018-01,Pebble,2018-01,23000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_pebble__2020-01,Pebble,2020-01,23000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_pebble__2022-01,Pebble,2022-01,23000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_pebble__2024-01,Pebble,2024-01,23000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_pebble__2026-01,Pebble,2026-01,23000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_proterra__2016-01,Proterra,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_proterra__2018-01,Proterra,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_proterra__2020-01,Proterra,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_proterra__2022-01,Proterra,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_proterra__2024-01,Proterra,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_proterra__2026-01,Proterra,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_quibi__2016-01,Quibi,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_quibi__2018-01,Quibi,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_quibi__2020-01,Quibi,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_quibi__2022-01,Quibi,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_quibi__2024-01,Quibi,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_quibi__2026-01,Quibi,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_rethink_robotics__2016-01,Rethink Robotics,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_rethink_robotics__2018-01,Rethink Robotics,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_rethink_robotics__2020-01,Rethink Robotics,2020-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_rethink_robotics__2022-01,Rethink Robotics,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_rethink_robotics__2024-01,Rethink Robotics,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_rethink_robotics__2026-01,Rethink Robotics,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_revolut__2016-01,Revolut,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_revolut__2018-01,Revolut,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_revolut__2020-01,Revolut,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_revolut__2022-01,Revolut,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_revolut__2024-01,Revolut,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_revolut__2026-01,Revolut,2026-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_scale_ai__2016-01,Scale AI,2016-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.2
+c_scale_ai__2018-01,Scale AI,2018-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.2
+c_scale_ai__2020-01,Scale AI,2020-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.2
+c_scale_ai__2022-01,Scale AI,2022-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.2
+c_scale_ai__2024-01,Scale AI,2024-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.2
+c_scale_ai__2026-01,Scale AI,2026-01,29000000000.0,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.2
+c_solyndra__2016-01,Solyndra,2016-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_solyndra__2018-01,Solyndra,2018-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_solyndra__2020-01,Solyndra,2020-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_solyndra__2022-01,Solyndra,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_solyndra__2024-01,Solyndra,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_solyndra__2026-01,Solyndra,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_spacex__2016-01,SpaceX,2016-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.091
+c_spacex__2018-01,SpaceX,2018-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.091
+c_spacex__2020-01,SpaceX,2020-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.091
+c_spacex__2022-01,SpaceX,2022-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.091
+c_spacex__2024-01,SpaceX,2024-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.091
+c_spacex__2026-01,SpaceX,2026-01,,0,[],WINNER,as_invested=1; hindsight_gap=1; temporal_coverage=0.091
+c_stability_ai__2016-01,Stability AI,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stability_ai__2018-01,Stability AI,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stability_ai__2020-01,Stability AI,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stability_ai__2022-01,Stability AI,2022-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stability_ai__2024-01,Stability AI,2024-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stability_ai__2026-01,Stability AI,2026-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stripe__2016-01,Stripe,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stripe__2018-01,Stripe,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stripe__2020-01,Stripe,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stripe__2022-01,Stripe,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stripe__2024-01,Stripe,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_stripe__2026-01,Stripe,2026-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_theranos__2016-01,Theranos,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_theranos__2018-01,Theranos,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_theranos__2020-01,Theranos,2020-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_theranos__2022-01,Theranos,2022-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_theranos__2024-01,Theranos,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_theranos__2026-01,Theranos,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_view__2016-01,View,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_view__2018-01,View,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_view__2020-01,View,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_view__2022-01,View,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_view__2024-01,View,2024-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_view__2026-01,View,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_galactic__2016-01,Virgin Galactic,2016-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_galactic__2018-01,Virgin Galactic,2018-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_galactic__2020-01,Virgin Galactic,2020-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_galactic__2022-01,Virgin Galactic,2022-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_galactic__2024-01,Virgin Galactic,2024-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_galactic__2026-01,Virgin Galactic,2026-01,,0,[],MEDIOCRE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_hyperloop__2016-01,Virgin Hyperloop,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_hyperloop__2018-01,Virgin Hyperloop,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_hyperloop__2020-01,Virgin Hyperloop,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_hyperloop__2022-01,Virgin Hyperloop,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_hyperloop__2024-01,Virgin Hyperloop,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_virgin_hyperloop__2026-01,Virgin Hyperloop,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_wework__2016-01,WeWork,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_wework__2018-01,WeWork,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_wework__2020-01,WeWork,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_wework__2022-01,WeWork,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_wework__2024-01,WeWork,2024-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_wework__2026-01,WeWork,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_wiz__2016-01,Wiz,2016-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_wiz__2018-01,Wiz,2018-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_wiz__2020-01,Wiz,2020-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_wiz__2022-01,Wiz,2022-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_wiz__2024-01,Wiz,2024-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_wiz__2026-01,Wiz,2026-01,,0,[],WINNER,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_zume__2016-01,Zume,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_zume__2018-01,Zume,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_zume__2020-01,Zume,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_zume__2022-01,Zume,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_zume__2024-01,Zume,2024-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_zume__2026-01,Zume,2026-01,0.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=None
+c_zymergen__2016-01,Zymergen,2016-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_zymergen__2018-01,Zymergen,2018-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_zymergen__2020-01,Zymergen,2020-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_zymergen__2022-01,Zymergen,2022-01,,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_zymergen__2024-01,Zymergen,2024-01,300000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0
+c_zymergen__2026-01,Zymergen,2026-01,300000000.0,0,[],FAILURE,as_invested=0; hindsight_gap=0; temporal_coverage=0.0

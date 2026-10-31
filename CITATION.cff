@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite Greensnake and retain source-level attribution when using this dataset."
+type: dataset
+title: "Greensnake: Open Research Dataset"
+authors:
+  - name: "MoheetBrain"
+repository-code: "https://github.com/MoheetBrain/Greensnake"
+url: "https://github.com/MoheetBrain/Greensnake"
+version: "2026-09-16-snapshot"
+abstract: "A historical, source-backed person–company graph with confirmed economic-exposure intersections and separate network-analysis metrics. Research snapshot: 16 September 2026."
+keywords:
+  - investment research
+  - network analysis
+  - source-backed data
+license: "CC-BY-4.0"
+# Applies to original dataset contributions only; see docs/DATA_LICENSE.md.
+# Software uses MIT; original dataset contributions use CC BY 4.0.
+date-released: "2026-10-31"

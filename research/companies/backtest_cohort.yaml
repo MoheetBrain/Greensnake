@@ -1,0 +1,81 @@
+# =============================================================================
+# BACKTEST COHORT — winners AND a matched failure/mediocre set
+# =============================================================================
+# Studying only OpenAI/SpaceX/Stripe proves nothing: famous winners have famous
+# investors by definition. Every winner class below is paired with companies
+# that attracted comparable elite/institutional backing and did NOT become
+# enormous -- shutdowns, fire sales, down rounds, stagnation.
+#
+# `outcome` is a FACTUAL claim about what happened. `outcome_evidence` records
+# its status:
+#   SOURCED             -- a source URL is attached
+#   PENDING_VERIFICATION-- compiled from the public record, not yet source-linked
+#                          in this repository. Treated as provisional; the
+#                          verification workstream must confirm or correct it.
+# A company whose fate cannot be established is labelled UNRESOLVED, never guessed.
+#
+# Labels: WINNER (>= ~$10B or transformative) · STRONG (large but not outlier)
+#         MEDIOCRE (flat / disappointing / fire-sale) · FAILURE (shut down,
+#         bankrupt, written off) · UNRESOLVED
+# =============================================================================
+compiled: "2026-09-16"
+
+cohort:
+
+# ---------------------------------------------------------------- WINNERS ---
+- {name: OpenAI,        outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Frontier AI lab; repeated step-changes in valuation."}
+- {name: Anthropic,     outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Frontier AI lab."}
+- {name: SpaceX,        outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Dominant commercial launch provider."}
+- {name: Anduril Industries, outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Defence technology; category created largely ahead of consensus."}
+- {name: Stripe,        outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Internet payments infrastructure."}
+- {name: Databricks,    outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Data and AI platform."}
+- {name: Figma,         outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Design platform; IPO after a blocked acquisition."}
+- {name: Wiz,           outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Cloud security; among the fastest scale-ups in enterprise software."}
+- {name: Scale AI,      outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "AI data infrastructure."}
+- {name: Palantir,      outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Defence and enterprise software; public."}
+- {name: DeepMind,      outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Acquired by Google 2014; foundational AI research."}
+- {name: Nubank,        outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Latin American digital bank; public."}
+- {name: Canva,         outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "Design platform built outside the US venture system."}
+- {name: Revolut,       outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "European neobank."}
+- {name: Commonwealth Fusion Systems, outcome: STRONG, outcome_evidence: PENDING_VERIFICATION, note: "Fusion; technically on track but pre-revenue -- outcome genuinely unresolved commercially."}
+
+# ------------------------------------------- NEGATIVE CONTROLS: FAILURES ----
+# Each of these attracted elite and/or major institutional backing.
+- {name: FTX,             outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Collapsed 2022; backers wrote the position to zero. Tests whether institutional crowding is signal or herding."}
+- {name: Theranos,        outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Fraud; dissolved. Notably had almost NO technical-elite backing -- a key discriminator to test."}
+- {name: Katerra,         outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Construction technology; shut down 2021 after very large investment."}
+- {name: Zume,            outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Robotic pizza; shut down 2023."}
+- {name: Fast,            outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "One-click checkout; shut down 2022 despite strong fintech backing."}
+- {name: Convoy,          outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Digital freight; ceased operations 2023 despite high-profile individual backers."}
+- {name: Olive AI,        outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Healthcare automation; wound down 2023."}
+- {name: Britishvolt,     outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "UK battery gigafactory; administration 2023."}
+- {name: Argo AI,         outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Autonomous driving; shut down 2022 by its corporate backers."}
+- {name: Quibi,           outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Short-form video; shut down 2020 months after launch."}
+- {name: Solyndra,        outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Thin-film solar; bankrupt 2011. The canonical first-wave cleantech failure."}
+- {name: Better Place,    outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Battery-swap EV infrastructure; bankrupt 2013."}
+- {name: Proterra,        outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Electric buses; Chapter 11 in 2023."}
+- {name: View,            outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Smart glass; very large capital consumed, delisted/bankrupt."}
+- {name: Virgin Hyperloop, outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Hyperloop; passenger programme abandoned, wound down 2023."}
+- {name: Nikola,          outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Hydrogen trucking; bankruptcy after SPAC."}
+- {name: Lordstown Motors, outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "EV trucks; bankruptcy after SPAC."}
+- {name: WeWork,          outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Coworking; Chapter 11 2023 after peak private valuation near $47B."}
+- {name: Juicero,         outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Connected juicer; shut down 2017. Elite backing, no technical moat."}
+- {name: Rethink Robotics, outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Collaborative robots; shut down 2018 despite a world-class robotics founder."}
+- {name: Essential Products, outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Smartphones; shut down 2020."}
+- {name: Pebble,          outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Smartwatches; assets sold 2016."}
+- {name: 23andMe,         outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Consumer genomics; bankruptcy 2025 after a peak public valuation near $6B."}
+- {name: Zymergen,        outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "Synthetic biology; acquired by Ginkgo for a small fraction of its IPO value."}
+
+# --------------------------------- NEGATIVE CONTROLS: MEDIOCRE OUTCOMES -----
+- {name: Magic Leap,      outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "AR; multi-billion raised, severe down round and pivot."}
+- {name: Inflection AI,   outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "Frontier AI lab that raised ~$1.3B and was effectively absorbed by Microsoft in 2024 -- elite founders, non-outlier outcome. A crucial control."}
+- {name: Adept AI,        outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "Agent lab effectively absorbed by Amazon 2024."}
+- {name: Character.AI,    outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "Consumer AI; founders and licence to Google 2024, company continues separately."}
+- {name: Stability AI,    outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "Open-source image models; leadership turmoil and recapitalisation."}
+- {name: Bloom Energy,    outcome: WINNER, outcome_evidence: PENDING_VERIFICATION, note: "RELABELLED 2026-09-16 (was MEDIOCRE). Now ~$80bn versus ~$1.6bn at its 2018 IPO -- roughly a 50x outcome. Leaving a 50x in the negative-control arm would have biased the backtest AGAINST finding signal, which is the most dangerous direction for a test of this kind."}
+- {name: Virgin Galactic, outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "Space tourism; severe post-SPAC decline."}
+- {name: Clover Health,   outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "Insurance; severe post-SPAC decline."}
+- {name: Opendoor,        outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "iBuying; severe post-SPAC decline."}
+- {name: Blue Apron,      outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "Meal kits; collapsed from IPO price, sold cheaply."}
+- {name: Bird,            outcome: FAILURE, outcome_evidence: PENDING_VERIFICATION, note: "RELABELLED 2026-09-16 (was MEDIOCRE). Chapter 11 in Dec 2023; assets sold to a lender-owned vehicle and the listed equity did not survive. That is a failure, not a disappointment."}
+- {name: Casper,          outcome: MEDIOCRE, outcome_evidence: PENDING_VERIFICATION, note: "DTC mattresses; taken private well below IPO."}

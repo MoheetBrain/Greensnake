@@ -1,0 +1,227 @@
+{
+  "people_total_in_universe": 190,
+  "people_by_signal_class": {
+    "CORE_HIGH_SIGNAL": 47,
+    "DOMAIN_SPECIALIST": 42,
+    "EXTENDED_SIGNAL": 80,
+    "LOW_SIGNAL_OR_POOR_VISIBILITY": 2,
+    "WATCHLIST": 19
+  },
+  "people_core_high_signal": 47,
+  "people_extended_signal": 80,
+  "people_domain_specialist": 42,
+  "people_watchlist": 19,
+  "people_low_signal": 2,
+  "people_with_at_least_one_confirmed_edge": 178,
+  "people_with_zero_edges": 12,
+  "companies_canonical_total": 2188,
+  "company_raw_name_strings_seen": 2234,
+  "companies_merged_by_dedup": 46,
+  "edges_total_investigated": 3411,
+  "edges_CONFIRMED_MULTI_SOURCE": 331,
+  "edges_CONFIRMED_PRIMARY": 2795,
+  "edges_CONFIRMED_REPUTABLE_SECONDARY": 79,
+  "edges_CONFLICTING_EVIDENCE": 0,
+  "edges_PROBABLE_BUT_NOT_CONFIRMED": 34,
+  "edges_REJECTED": 0,
+  "edges_UNVERIFIED": 0,
+  "edges_in_database": 3239,
+  "edges_confirmed": 3205,
+  "edges_rejected_table": 67,
+  "edges_in_research_queue": 105,
+  "confirmed_edges_with_primary_evidence": 3116,
+  "pct_confirmed_with_primary_evidence": 97.2,
+  "confirmed_edges_secondary_only": 89,
+  "pct_confirmed_secondary_only": 2.8,
+  "sources_total": 4694,
+  "sources_by_tier": {
+    "TIER_1_PRIMARY": 3977,
+    "TIER_2_SECONDARY": 716,
+    "TIER_3_DATABASE": 1
+  },
+  "distinct_source_domains": 209,
+  "confirmed_edges_by_relationship_type": {
+    "CONTROLLED_FUND_INVESTMENT": 1375,
+    "VC_FUND_PARTNER_INVESTMENT": 590,
+    "FAMILY_OFFICE_INVESTMENT": 406,
+    "PERSONAL_ANGEL_INVESTMENT": 299,
+    "FOUNDER_EQUITY": 259,
+    "BOARD_ONLY": 109,
+    "PERSONAL_EQUITY_INVESTMENT": 55,
+    "ADVISOR_ONLY": 49,
+    "OTHER_VERIFIED": 37,
+    "PHILANTHROPIC_FUNDING": 23,
+    "CORPORATE_STRATEGIC_INVESTMENT": 2,
+    "LP_INDIRECT": 1
+  },
+  "companies_with_current_valuation": 145,
+  "pct_companies_with_valuation": 6.6,
+  "valuation_staleness_counts": {
+    "LT_6M": 60,
+    "6_TO_12M": 15,
+    "12_TO_18M": 21,
+    "18_TO_36M": 15,
+    "GT_36M": 34
+  },
+  "valuation_staleness_pct_of_valued": {
+    "LT_6M": 41.4,
+    "6_TO_12M": 10.3,
+    "12_TO_18M": 14.5,
+    "18_TO_36M": 10.3,
+    "GT_36M": 23.4
+  },
+  "companies_valuation_unknown": 2043,
+  "companies_by_tier": {
+    "TIER_A_UNDER_500M": 16,
+    "TIER_B_500M_TO_1B": 3,
+    "TIER_C_1B_TO_5B": 20,
+    "TIER_D_5B_PLUS": 81,
+    "TIER_U_UNKNOWN": 2023
+  },
+  "companies_public": 49,
+  "companies_private": 455,
+  "companies_public_private_unknown": 1684,
+  "companies_with_entry_valuation": 5,
+  "edges_with_investment_date": 581,
+  "pct_edges_dated": 17.9,
+  "correlations_asserted": 188,
+  "correlations_derived": 110,
+  "people_without_reconstructable_portfolio": [
+    {
+      "person_key": "jensen_huang",
+      "full_name": "Jensen Huang",
+      "signal_class": "CORE_HIGH_SIGNAL"
+    },
+    {
+      "person_key": "chris_olah",
+      "full_name": "Chris Olah",
+      "signal_class": "DOMAIN_SPECIALIST"
+    },
+    {
+      "person_key": "jared_kaplan",
+      "full_name": "Jared Kaplan",
+      "signal_class": "DOMAIN_SPECIALIST"
+    },
+    {
+      "person_key": "lisa_su",
+      "full_name": "Lisa Su",
+      "signal_class": "DOMAIN_SPECIALIST"
+    },
+    {
+      "person_key": "shane_legg",
+      "full_name": "Shane Legg",
+      "signal_class": "DOMAIN_SPECIALIST"
+    },
+    {
+      "person_key": "brad_gerstner",
+      "full_name": "Brad Gerstner",
+      "signal_class": "EXTENDED_SIGNAL"
+    },
+    {
+      "person_key": "chase_coleman",
+      "full_name": "Chase Coleman",
+      "signal_class": "EXTENDED_SIGNAL"
+    },
+    {
+      "person_key": "lee_fixel",
+      "full_name": "Lee Fixel",
+      "signal_class": "EXTENDED_SIGNAL"
+    },
+    {
+      "person_key": "michael_moritz",
+      "full_name": "Michael Moritz",
+      "signal_class": "EXTENDED_SIGNAL"
+    },
+    {
+      "person_key": "philippe_laffont",
+      "full_name": "Philippe Laffont",
+      "signal_class": "EXTENDED_SIGNAL"
+    },
+    {
+      "person_key": "kevin_scott",
+      "full_name": "Kevin Scott",
+      "signal_class": "WATCHLIST"
+    },
+    {
+      "person_key": "satya_nadella",
+      "full_name": "Satya Nadella",
+      "signal_class": "WATCHLIST"
+    }
+  ],
+  "n_people_without_reconstructable_portfolio": 12,
+  "companies_by_sector": {
+    "(unlabelled)": 1682,
+    "AI_SOFTWARE": 98,
+    "INDUSTRIAL_DEEPTECH": 80,
+    "ENERGY_CLIMATE": 66,
+    "BIOTECH_LIFESCIENCES": 59,
+    "FINTECH": 49,
+    "CONSUMER_INTERNET": 32,
+    "MATERIALS": 29,
+    "SPACE": 19,
+    "DEFENCE": 18,
+    "ROBOTICS": 13,
+    "TRANSPORT_MOBILITY": 12,
+    "HEALTHCARE_SERVICES": 10,
+    "AGRICULTURE_FOOD": 7,
+    "SEMICONDUCTORS": 5,
+    "QUANTUM": 3,
+    "GENERALIST": 3,
+    "CRYPTO": 3
+  },
+  "companies_by_country": {
+    "(unstated)": 1836,
+    "US": 209,
+    "FR": 28,
+    "GB": 22,
+    "CA": 16,
+    "AU": 10,
+    "IL": 7,
+    "ID": 6,
+    "HK": 6,
+    "IN": 5,
+    "SE": 4,
+    "NZ": 4,
+    "DE": 4,
+    "BR": 4,
+    "TR": 3,
+    "PH": 2,
+    "MX": 2,
+    "CO": 2,
+    "CH": 2,
+    "BE": 2,
+    "Australia": 2,
+    "UA": 1,
+    "SG": 1,
+    "NL": 1,
+    "NG": 1,
+    "DK": 1,
+    "CN": 1,
+    "BS": 1,
+    "BM": 1,
+    "BG": 1,
+    "AT": 1,
+    "AR": 1,
+    "AE": 1
+  },
+  "companies_sector_unlabelled": 1682,
+  "companies_country_unstated": 1836,
+  "edges_by_workstream": {
+    "agent_5": 1043,
+    "agent_2": 864,
+    "agent_3": 479,
+    "agent_6": 470,
+    "agent_4": 203,
+    "agent_1": 146
+  },
+  "source_urls_checked": 4676,
+  "source_urls_failing": 736,
+  "pct_source_urls_resolving": 84.3,
+  "data_completeness_assessment": "EXPLORATORY",
+  "data_completeness_reasons": [
+    "only 7% of companies carry a sourced current valuation",
+    "only 18% of edges carry an investment date, which limits every temporal metric",
+    "Angel and family-office investing is structurally under-disclosed: absence of an edge is never evidence of absence of an investment.",
+    "Losses and write-offs are disclosed far less often than wins, so the failure database understates true failure rates."
+  ]
+}

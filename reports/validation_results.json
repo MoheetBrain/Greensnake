@@ -1,0 +1,209 @@
+[
+  {
+    "test_id": "T01",
+    "name": "Every confirmed edge has at least one valid source",
+    "status": "PASS",
+    "detail": "all confirmed edges carry at least one source",
+    "examples": []
+  },
+  {
+    "test_id": "T02",
+    "name": "Every company in a valuation bucket has valuation + date + source",
+    "status": "PASS",
+    "detail": "every bucketed company has a sourced, dated valuation",
+    "examples": []
+  },
+  {
+    "test_id": "T03",
+    "name": "No company exists under multiple canonical IDs without a stated reason",
+    "status": "WARN",
+    "detail": "8 near-miss company name pairs need human review",
+    "examples": [
+      {
+        "a": "c_colossal_bio",
+        "b": "c_colossal_biosciences"
+      },
+      {
+        "a": "c_essential",
+        "b": "c_essential_products"
+      },
+      {
+        "a": "c_parallel",
+        "b": "c_parallel_web"
+      },
+      {
+        "a": "c_parallel",
+        "b": "c_parallel_wireless"
+      },
+      {
+        "a": "c_quotient",
+        "b": "c_quotient_therapeutics"
+      },
+      {
+        "a": "c_slingshot",
+        "b": "c_slingshot_biosciences"
+      },
+      {
+        "a": "c_tmunity",
+        "b": "c_tmunity_therapeutics"
+      },
+      {
+        "a": "c_veritas",
+        "b": "c_veritas_genetics"
+      }
+    ]
+  },
+  {
+    "test_id": "T04",
+    "name": "Counts in ranking tables exactly equal their underlying edges",
+    "status": "PASS",
+    "detail": "every stored count reconciles exactly to the edge table",
+    "examples": []
+  },
+  {
+    "test_id": "T05",
+    "name": "Tier boundaries are mutually exclusive and correctly applied",
+    "status": "PASS",
+    "detail": "all companies sit in exactly the tier their valuation implies",
+    "examples": []
+  },
+  {
+    "test_id": "T06",
+    "name": "Unknown valuations are never silently given a bucket",
+    "status": "PASS",
+    "detail": "every company without a sourced valuation is in TIER_U_UNKNOWN",
+    "examples": []
+  },
+  {
+    "test_id": "T07",
+    "name": "No source URL is blank for a CONFIRMED record",
+    "status": "PASS",
+    "detail": "every confirmed-edge source has an http(s) URL",
+    "examples": []
+  },
+  {
+    "test_id": "T08",
+    "name": "No person-company pair is double-counted across funding rounds",
+    "status": "PASS",
+    "detail": "28 person-company pairs span multiple rounds; each contributes exactly once to counts and scores",
+    "examples": []
+  },
+  {
+    "test_id": "T09",
+    "name": "Founder equity is distinguishable from subsequent investing",
+    "status": "WARN",
+    "detail": "7 FOUNDER_EQUITY edges carry a priced-round name -- check whether these are founder shares or a later purchase",
+    "examples": [
+      {
+        "edge_id": "a5c3746b42bbe72a",
+        "person_key": "feng_zhang",
+        "company_id": "c_moonwalk_biosciences"
+      },
+      {
+        "edge_id": "04c56c6974de8d4d",
+        "person_key": "jennifer_doudna",
+        "company_id": "c_scribe_therapeutics"
+      },
+      {
+        "edge_id": "44dd2f821ac889a8",
+        "person_key": "carl_june",
+        "company_id": "c_capstan_therapeutics"
+      },
+      {
+        "edge_id": "aa0e47994d58aa4a",
+        "person_key": "patrick_hsu",
+        "company_id": "c_stylus_medicine"
+      },
+      {
+        "edge_id": "19c6b66621f23bb0",
+        "person_key": "feng_zhang",
+        "company_id": "c_aera_therapeutics"
+      },
+      {
+        "edge_id": "8600e8f94c0b1963",
+        "person_key": "feng_zhang",
+        "company_id": "c_pairwise_plants"
+      },
+      {
+        "edge_id": "5e5ce3916b6fe122",
+        "person_key": "brett_adcock",
+        "company_id": "c_hark"
+      }
+    ]
+  },
+  {
+    "test_id": "T10",
+    "name": "Controlled-fund exposure is not mislabelled as personal investment",
+    "status": "PASS",
+    "detail": "1787 controlled-vehicle and 594 fund-partner edges are typed separately from personal exposure",
+    "examples": []
+  },
+  {
+    "test_id": "T11",
+    "name": "No confirmed edge rests solely on non-resolving citations",
+    "status": "WARN",
+    "detail": "24 confirmed edges have no citation that still resolves; they need re-sourcing before the claim can be re-checked",
+    "examples": [
+      {
+        "edge_id": "d75dbbd9182ca81f",
+        "person_key": "jim_keller",
+        "company_id": "c_tenstorrent",
+        "verification_status": "CONFIRMED_REPUTABLE_SECONDARY"
+      },
+      {
+        "edge_id": "6220bb16d6b66602",
+        "person_key": "emad_mostaque",
+        "company_id": "c_stability_ai",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "296b7d5712a4d9f0",
+        "person_key": "fei_fei_li",
+        "company_id": "c_radical_ventures",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "e23b1dec5ec4e091",
+        "person_key": "fei_fei_li",
+        "company_id": "c_radical_ventures",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "8511968d34579df6",
+        "person_key": "jigar_shah",
+        "company_id": "c_generate_capital",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "ecac0e4a96144647",
+        "person_key": "jigar_shah",
+        "company_id": "c_carbon_war_room",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "6ace014e64984381",
+        "person_key": "jason_calacanis",
+        "company_id": "c_uber",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "b3a9488abbcf15b0",
+        "person_key": "jason_calacanis",
+        "company_id": "c_robinhood",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "82c8b143d724b85b",
+        "person_key": "jason_calacanis",
+        "company_id": "c_calm",
+        "verification_status": "CONFIRMED_PRIMARY"
+      },
+      {
+        "edge_id": "9ca361483040ec3d",
+        "person_key": "jason_calacanis",
+        "company_id": "c_superhuman",
+        "verification_status": "CONFIRMED_PRIMARY"
+      }
+    ]
+  }
+]
